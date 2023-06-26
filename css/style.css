@@ -1,67 +1,3 @@
-/*============================
-    CSS Index         
-==============================
-
-    01. Default Css
-        - Breadvrumb 
-        - Preloader   
-        - Scroll top 
-        - Dividers Css 
-        - Google Map Css 
-    02. Section Spacing Css
-    03. Custom Animation Css
-    04. container Css 
-    05. Header Css 
-        - language
-        - Navigation Menu Css
-        - Multilevel Submenu Css
-        - Mega Menu Css
-        - Mobile Menu Overlay Css
-        - offset search
-        - search overlay
-    06. Footer Css
-    07. Sidebar Css
-    08. Button Css 
-    09. Accordions Css 
-    10. Call To Action Css  
-    11. Countdown Css 
-    12. Counters Css 
-    13. Box Icon Css
-    14. Box Images Css
-    15. Box Large Images Css
-    16. Brand Logo Css  
-    17. Listing Css
-    18. Gradation Process Css     
-    19. Instagram Css     
-    20. Message Box Css 
-    21. Video Popup Css
-    22. Pricing table Css
-    23. progress Bar Css 
-    24. Circle Progress Css
-    25. Row Separators Css
-    26. Social Networks Css 
-    27. Listing Css
-    29. Team Member Css 
-    30. Timeline Css
-    31. Testimonial slider Css 
-    32. Project Css 
-    33. Contact Us Css 
-    34. Blog Pages Css
-    35. Infotechno Css  
-    36. Processing Hero Css
-    37. Processing Hero Css
-    38. Resolutions home Css
-    39. Cybersecurity home Css  
-    40. About Us pages Css
-    41. Single Smart Vision Css
-    42. Redraw Css
-    43. Preview Page Css 
-
-
-/*=====  End of CSS Index  ======*/
-/*=============================================
-=             01. Default Css                 =
-=============================================*/
 *,
 *::after,
 *::before {
@@ -226,13 +162,6 @@ button {
   text-decoration: none;
   cursor: pointer;
 }
-/*
-a, button, img, input, span {
-  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-*/
 
 *:focus {
   outline: none !important;
@@ -355,27 +284,6 @@ mark {
 .bg-red-main {
   background: #b10800;
 }
-
-/*-- Tab Content & Pane Fix --*/
-/* select {
-  padding: 3px 20px;
-  height: 56px;
-  max-width: 100%;
-  width: 100%;
-  outline: none;
-  border: 1px solid #f8f8f8;
-  border-radius: 5px;
-  background: #f8f8f8 url("../images/icons/selector-icon.png") no-repeat center
-    right 12px;
-  background-color: #f8f8f8;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-
-select:focus {
-  background: #f8f8f8 url("../images/icons/selector-icon.png") no-repeat center
-    right 12px !important;
-} */
 
 .fixed-bg {
   background-size: cover;
@@ -507,9 +415,6 @@ select:focus {
 }
 
 form {
-  /* FF 4-18 */
-  /* FF 19+ */
-  /* IE 10+ */
 }
 
 form input:focus::-webkit-input-placeholder {
@@ -803,10 +708,6 @@ input[type="checkbox"] {
 .single-element-wrap ul li:last-child {
   margin-bottom: 0;
 }
-
-/*===================================
-    - Breadvrumb  
-=================================*/
 .breadcrumb-area {
   background-color: #f6f2ed;
   background-repeat: no-repeat;
@@ -816,7 +717,12 @@ input[type="checkbox"] {
   background-image: url(../images/breadcrumb-bg.png);
   padding: 10px 0;
 }
-
+.img-step strong a {
+  color: rgb(7, 130, 193);
+  font-family: sans-serif, Arial, Verdana;
+  font-size: 13px;
+  background-color: rgb(255, 255, 255);
+}
 .breadcrumb-area-step {
   background-color: #f6f2ed;
   background-repeat: no-repeat;
@@ -1035,9 +941,6 @@ input[type="checkbox"] {
   right: 0;
 }
 
-/*=============================================
-   - Scroll top         
-=============================================*/
 .scroll-top {
   position: fixed;
   right: 30px;
@@ -1119,9 +1022,6 @@ input[type="checkbox"] {
   transform: translate(-50%, -50%);
 }
 
-/*=============================================
-   - Dividers Css        
-=============================================*/
 .separator-wrap {
   text-align: center;
   display: inline-block;
@@ -1180,22 +1080,13 @@ input[type="checkbox"] {
   }
 }
 
-/*=================================
-=          - Google Map Css       =                
-===================================*/
 #googleMap-1,
 #googleMap-2,
 #googleMap-3 {
   height: 400px;
 }
 
-/*=====  End of Default CSS  ======*/
-/*============================================
-=           02. Section Spacing Css          =
-=============================================*/
 .section-space {
-  /* Section Padding Css */
-  /* Section Margin Css */
 }
 
 .section-space--ptb_120 {
@@ -1879,10 +1770,6 @@ input[type="checkbox"] {
   }
 }
 
-/*=====  End of spacing  ======*/
-/*===========================================
-=        03. Custom Animation Css
-===========================================*/
 @-webkit-keyframes moveVertical {
   to {
     opacity: 1;
@@ -1941,9 +1828,6 @@ input[type="checkbox"] {
   animation: moveHorizontal 0.65s ease forwards;
 }
 
-/* ------------------------
-    Custom Animation 01 
-----------------------------*/
 @-webkit-keyframes headerSlideDown {
   0% {
     margin-top: -100px;
@@ -1964,9 +1848,6 @@ input[type="checkbox"] {
   }
 }
 
-/* --------------------------------------
-    Custom Hide Animation
----------------------------------------*/
 @-webkit-keyframes hide-animation {
   0% {
     -webkit-transform: translateY(0);
@@ -1993,9 +1874,6 @@ input[type="checkbox"] {
   }
 }
 
-/* --------------------------------------
-    Custom Slide Show Animation
----------------------------------------*/
 @-webkit-keyframes show-animation {
   0% {
     -webkit-transform: translateY(60px);
@@ -2022,9 +1900,6 @@ input[type="checkbox"] {
   }
 }
 
-/* --------------------------------------
-    Custom Slide Out To Right
----------------------------------------*/
 @-webkit-keyframes slide-out-to-right {
   0% {
     -webkit-transform: translateX(0);
@@ -2051,9 +1926,6 @@ input[type="checkbox"] {
   }
 }
 
-/* --------------------------------------
-    Custom Slide Out To Left
----------------------------------------*/
 @-webkit-keyframes slide-in-to-left {
   0% {
     -webkit-transform: translateX(60px);
@@ -2080,9 +1952,6 @@ input[type="checkbox"] {
   }
 }
 
-/* ------------------------
-    Brook Hover Effect 
----------------------------*/
 .brook-transition {
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -2118,9 +1987,6 @@ input[type="checkbox"] {
   right: auto;
 }
 
-/* ------------------------
-    Separator Bounce 
----------------------------*/
 @-webkit-keyframes separator-bounce {
   0%,
   80%,
@@ -2149,9 +2015,6 @@ input[type="checkbox"] {
   }
 }
 
-/*=============================================
-=            04. container Css            =
-=============================================*/
 @media (min-width: 1600px) {
   .container-fluid--cp-150 {
     padding: 0 150px !important;
@@ -2437,10 +2300,6 @@ input[type="checkbox"] {
   }
 }
 
-/*=====  End of container  ======*/
-/*=============================================
-=              05. Header Css            =
-=============================================*/
 .header-area .is-sticky {
   position: fixed;
   top: 0;
@@ -2659,8 +2518,7 @@ input[type="checkbox"] {
     top: 0;
     left: 0;
     width: 100%;
-    /*-webkit-animation: .95s ease-in-out 0s normal none 1 running fadeInDown;
-            animation: .95s ease-in-out 0s normal none 1 running fadeInDown;*/
+
     z-index: 999;
     -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -2717,7 +2575,6 @@ input[type="checkbox"] {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  /* logo */
 }
 
 .header__logo {
@@ -2924,9 +2781,6 @@ input[type="checkbox"] {
   }
 }
 
-/*======================
-    - language 
-=======================*/
 .language-menu {
   padding-right: 25px;
 }
@@ -3497,9 +3351,6 @@ input[type="checkbox"] {
   color: #d2a98e;
 }
 
-/*============================== 
-    - Navigation Menu Css
-===============================*/
 .navigation-menu > ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3554,18 +3405,6 @@ input[type="checkbox"] {
 .navigation-menu > ul > li.has-children > a {
   position: relative;
 }
-
-/* .navigation-menu > ul > li.has-children > a:after {
-  position: static;
-  margin-left: 5px;
-  font-family: "Font Awesome 5 Pro";
-  content: "\f107";
-  font-size: 14px;
-  vertical-align: middle;
-  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-} */
 
 .navigation-menu > ul > li.has-children--multilevel-submenu {
   position: relative;
@@ -3641,9 +3480,6 @@ input[type="checkbox"] {
   margin: 0 24px 0 0;
 }
 
-/*===================================
-    - Multilevel Submenu Css
-====================================*/
 .submenu {
   position: absolute;
   top: 100%;
@@ -3867,9 +3703,6 @@ input[type="checkbox"] {
   left: 0;
 }
 
-/*=========================================
-    - Mega Menu Css
-===========================================*/
 .megamenu {
   position: absolute;
   top: 100%;
@@ -4001,7 +3834,6 @@ input[type="checkbox"] {
   }
 }
 
-/* Mobile Mavigation icon */
 .mobile-navigation-icon {
   position: relative;
   cursor: pointer;
@@ -4027,48 +3859,6 @@ input[type="checkbox"] {
   color: #fff;
   width: 60%;
 }
-/*
-
-.mobile-navigation-icon i {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.mobile-navigation-icon i:before {
-  position: absolute;
-  bottom: 8px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  content: "";
-  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.mobile-navigation-icon i:after {
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  content: "";
-  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-*/
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .mobile-navigation-icon.white-md-icon i {
@@ -4152,9 +3942,6 @@ input[type="checkbox"] {
   color: #fff;
 }
 
-/*================================ 
-    - Mobile Menu Overlay Css
-==================================*/
 .mobile-menu-overlay,
 .page-oppen-off-sidebar {
   position: fixed;
@@ -4287,7 +4074,6 @@ input[type="checkbox"] {
 
 .mobile-menu-overlay__body .offcanvas-navigation,
 .page-oppen-off-sidebar__body .offcanvas-navigation {
-  /* onepage style */
 }
 
 .mobile-menu-overlay__body .offcanvas-navigation > ul > li,
@@ -4644,9 +4430,6 @@ input[type="checkbox"] {
   font-weight: 700;
 }
 
-/*======================================
-    - offset search
-======================================*/
 .page-oppen-off-sidebar {
   right: 0;
 }
@@ -4713,9 +4496,6 @@ input[type="checkbox"] {
   line-height: 17px;
 }
 
-/*===============================
-    - search overlay
-===============================*/
 .search-overlay {
   position: fixed;
   left: 0;
@@ -4967,10 +4747,6 @@ input[type="checkbox"] {
   color: #086ad8;
 }
 
-/*=====  End of Header  ======*/
-/*=========================================
-=               06. Footer Css            =
-===========================================*/
 .reveal-footer {
   position: fixed;
   bottom: 0;
@@ -5063,10 +4839,6 @@ input[type="checkbox"] {
   }
 }
 
-/*=====  End of footer ======*/
-/*=======================================
-=            07. Sidebar Css           =
-=========================================*/
 .page-sidebar-right {
   padding-left: 30px;
 }
@@ -5154,12 +4926,6 @@ input[type="checkbox"] {
   background: #086ad8;
 }
 
-/*
-.widget-blog-recent-post ul li:first-child a {
-  margin-top: -16px;
-}
-*/
-
 .widget-blog-recent-post ul li {
   border-bottom: 1px dashed #b4b4b4;
 }
@@ -5184,52 +4950,6 @@ input[type="checkbox"] {
   width: 100%;
   margin: 0 0 5px 0;
 }
-
-/*
-.widget-blog-recent-post ul li a::before, .widget-blog-recent-post ul li a::after {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  font-family: 'Font Awesome 5 Pro';
-  font-weight: 900;
-  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.widget-blog-recent-post ul li a::after, .widget-blog-recent-post ul li a::before {
-  content: '\f30b';
-  position: absolute;
-  top: 22px;
-  left: 0;
-}
-
-.widget-blog-recent-post ul li a::before {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-.widget-blog-recent-post ul li a:hover::before {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-}
-
-.widget-blog-recent-post ul li a:hover::after {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
-}
-*/
 
 .widget-tag .ht-btn {
   color: #ababab;
@@ -5291,10 +5011,6 @@ input[type="checkbox"] {
   font-size: 16px;
 }
 
-/*=====  End of Sidebar  ======*/
-/*=============================================
-=            08. Button Css           =
-=============================================*/
 .ht-btn {
   font-size: 15px;
   font-weight: 500;
@@ -5699,7 +5415,6 @@ input[type="checkbox"] {
   right: auto;
 }
 
-/* Images Button */
 .image-btn {
   border: 0;
   -webkit-box-shadow: none;
@@ -5709,7 +5424,6 @@ input[type="checkbox"] {
   overflow: hidden;
 }
 
-/* video pay link */
 .video-play i {
   color: #d2a98e;
 }
@@ -5720,7 +5434,6 @@ input[type="checkbox"] {
   margin-left: 10px;
 }
 
-/* button wrapper */
 .button-wrapper > a {
   border: none;
 }
@@ -5737,7 +5450,6 @@ input[type="checkbox"] {
   }
 }
 
-/* Text Button*/
 .btn-text {
   color: #086ad8;
 }
@@ -5767,10 +5479,6 @@ input[type="checkbox"] {
   transform: translateY(-3px);
 }
 
-/*=====  End of Button  ======*/
-/*=============================================
-=            09. Accordions Css           =
-=============================================*/
 .faq-wrapper .panel.panel-default {
   border: 1px solid #ebebeb;
   margin-bottom: 20px;
@@ -6009,9 +5717,6 @@ input[type="checkbox"] {
   }
 }
 
-/*=============================================
-=           10. Call To Action Css             =
-=============================================*/
 .cta-bg-image_one {
   background-color: #454545;
   background-image: url(../images/patterns/mitech-call-to-action-image-global.png);
@@ -6063,10 +5768,6 @@ input[type="checkbox"] {
   margin: 10px;
 }
 
-/*=====  End of cta   ======*/
-/*======================================
-=          11. Countdown Css            =
-=======================================*/
 .countdown-deals {
   display: grid;
   grid-gap: 30px;
@@ -6250,9 +5951,6 @@ input[type="checkbox"] {
   }
 }
 
-/*======================================
-=         12. Counters Css              =
-=======================================*/
 .fun-fact-grid-4 {
   border-right: 1px solid #ededed;
   display: -webkit-box;
@@ -16865,9 +16563,9 @@ label {
   background: #d0e5ed;
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 5px;
   border-right: 1px dashed #ffffff;
-  min-height: 120px;
+  min-height: 165px;
 }
 
 .header-services .form-check {
@@ -16917,14 +16615,15 @@ label {
 
 .body-services {
   background: #ffffff;
-  border-left: 1px solid #dedede;
+  border: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
   box-sizing: border-box;
   padding: 15px;
   position: relative;
   display: flex;
-  justify-content: center;
-  min-height: 465px;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 565px;
   text-align: justify;
 }
 
@@ -16937,7 +16636,6 @@ label {
 }
 
 .extra-money {
-  position: absolute;
   bottom: 15px;
   background: #edf6f9;
   border: 1px dashed #787878;
@@ -17038,9 +16736,11 @@ label {
   font-weight: 500;
   padding: 3px 15px;
   height: 50px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
 }
-
+.form-check-inline {
+  display: block;
+}
 .search-main .inquiry {
   width: 100%;
 }
@@ -17883,4 +17583,25 @@ select {
 
 .mapservice {
   max-width: 20%;
+}
+.social {
+  margin-top: 12px;
+  display: flex;
+}
+.post-title {
+  text-align: center;
+}
+.post-title span {
+  font-size: 28px;
+}
+.twitter-share-button.twitter-share-button-rendered.twitter-tweet-button {
+  position: static;
+  visibility: visible;
+  width: 73px;
+  height: 20px;
+}
+.fb-like.fb_iframe_widget {
+  vertical-align: bottom;
+  width: 150px;
+  height: 28px;
 }

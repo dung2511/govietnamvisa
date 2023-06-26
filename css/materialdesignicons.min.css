@@ -11203,6 +11203,9 @@
 .mdi-numeric-negative-1::before {
   content: "\F1052";
 }
+.mdi-numeric-positive-1::before {
+  content: "\F15CB";
+}
 .mdi-nut::before {
   content: "\F06F8";
 }

@@ -1,15 +1,6 @@
 (function ($) {
   "use strict";
 
-  /*===============================
-    =         Wow Active            =
-    ================================*/
-
-  new WOW().init();
-
-  /*=============================================
-    =       Menu sticky & Scroll to top          =
-    =============================================*/
   var windows = $(window);
   var screenSize = windows.width();
   var sticky = $(".header-sticky");
@@ -28,7 +19,6 @@
       }
     }
   });
-  /*----------  Scroll to top  ----------*/
   function scrollToTop() {
     var $scrollUp = $("#scroll-top"),
       $lastScrollTop = 0,
@@ -55,10 +45,6 @@
   }
   scrollToTop();
 
-  /*=========================================
-    =            Preloader active            =
-    ===========================================*/
-
   windows.on("load", function () {
     $(".preloader-activate").removeClass("preloader-active");
   });
@@ -68,10 +54,6 @@
       jQuery(".open_tm_preloader").addClass("loaded");
     }, 1000);
   });
-
-  /*=========================================
-    =            One page nav active          =
-    ===========================================*/
 
   var top_offset = $(".navigation-menu--onepage").height() - 60;
   $(".navigation-menu--onepage ul").onePageNav({
@@ -84,10 +66,6 @@
     currentClass: "active",
     scrollOffset: top_offset_mobile,
   });
-
-  /*===========================================
-    =            Submenu viewport position      =
-    =============================================*/
 
   if ($(".has-children--multilevel-submenu").find(".submenu").length) {
     var elm = $(".has-children--multilevel-submenu").find(".submenu");
@@ -105,9 +83,6 @@
       }
     });
   }
-  /*==========================================
-    =            mobile menu active            =
-    ============================================*/
 
   $("#mobile-menu-trigger").on("click", function () {
     $("#mobile-menu-overlay").addClass("active");
@@ -124,7 +99,6 @@
     $body.removeClass("no-overflow");
   });
 
-  /*Close When Click Outside*/
   $body.on("click", function (e) {
     var $target = e.target;
     if (
@@ -147,14 +121,10 @@
     }
   });
 
-  /*===================================
-    =           Menu Activeion          =
-    ===================================*/
   var cururl = window.location.pathname;
   var curpage = cururl.substr(cururl.lastIndexOf("/") + 1);
   var hash = window.location.hash.substr(1);
   if ((curpage == "" || curpage == "/" || curpage == "admin") && hash == "") {
-    //$("nav .navbar-nav > li:first-child").addClass("active");
   } else {
     $(".navigation-menu li").each(function () {
       $(this).removeClass("active");
@@ -169,9 +139,6 @@
         .addClass("active");
   }
 
-  /*=========================================
-    =             open menu Active            =
-    ===========================================*/
   $(".openmenu-trigger").on("click", function (e) {
     e.preventDefault();
     $(".open-menuberger-wrapper").addClass("is-visiable");
@@ -182,9 +149,6 @@
     $(".open-menuberger-wrapper").removeClass("is-visiable");
   });
 
-  /*=========================================
-    =             open menu Active            =
-    ===========================================*/
   $("#open-off-sidebar-trigger").on("click", function () {
     $("#page-oppen-off-sidebar-overlay").addClass("active");
     $body.addClass("no-overflow");
@@ -194,10 +158,6 @@
     $("#page-oppen-off-sidebar-overlay").removeClass("active");
     $body.removeClass("no-overflow");
   });
-
-  /*=============================================
-    =            search overlay active            =
-    =============================================*/
 
   $("#search-overlay-trigger").on("click", function () {
     $("#search-overlay").addClass("active");
@@ -209,25 +169,14 @@
     $body.removeClass("no-overflow");
   });
 
-  /*=============================================
-    =            hidden icon active            =
-    =============================================*/
-
   $("#hidden-icon-trigger").on("click", function () {
     $("#hidden-icon-wrapper").toggleClass("active");
   });
-
-  /*=============================================
-    =            newsletter popup active            =
-    =============================================*/
 
   $("#newsletter-popup-close-trigger").on("click", function () {
     $("#newsletter-popup").removeClass("active");
   });
 
-  /*=========================================
-    =             open menu Active            =
-    ===========================================*/
   $(".share-icon").on("click", function (e) {
     e.preventDefault();
     $(".entry-post-share").toggleClass("opened");
@@ -236,26 +185,20 @@
   $body.on("click", function () {
     $(".entry-post-share").removeClass("opened");
   });
-  // Prevent closing dropdown upon clicking inside the dropdown
+
   $(".entry-post-share").on("click", function (e) {
     e.stopPropagation();
   });
 
-  /*=============================================
-    =            offcanvas mobile menu            =
-    =============================================*/
   var $offCanvasNav = $(".offcanvas-navigation"),
     $offCanvasNavSubMenu = $offCanvasNav.find(".sub-menu");
 
-  /*Add Toggle Button With Off Canvas Sub Menu*/
   $offCanvasNavSubMenu
     .parent()
     .prepend('<span class="menu-expand"><i></i></span>');
 
-  /*Close Off Canvas Sub Menu*/
   $offCanvasNavSubMenu.slideUp();
 
-  /*Category Sub Menu Toggle*/
   $offCanvasNav.on("click", "li a, li .menu-expand", function (e) {
     var $this = $(this);
     if (
@@ -283,54 +226,23 @@
     }
   });
 
-  /*=======================================
-    =    	Portfolio Masonry Activation    =
-    =========================================*/
-
-  $(".projects-masonary-wrapper").imagesLoaded(function () {
-    // filter items on button click
-    $(".messonry-button").on("click", "button", function () {
-      var filterValue = $(this).attr("data-filter");
-      $(this).siblings(".is-checked").removeClass("is-checked");
-      $(this).addClass("is-checked");
-      $grid.isotope({
-        filter: filterValue,
-      });
-    });
-
-    // init Isotope
-    var $grid = $(".mesonry-list").isotope({
-      percentPosition: true,
-      transitionDuration: "0.7s",
-      layoutMode: "masonry" /*
-                masonry: {
-                    columnWidth: '.resizer',
-                }*/,
-    });
+  $(window).scroll(function () {
+    var aTop = $("#content").height();
+    var height = $(window).height();
+    if ($(this).scrollTop() + height >= aTop) {
+      $(".show-continute").hide();
+      $("div.f-view-more").removeClass("view-more-fix");
+    } else {
+      $(".show-continute").show();
+      $("div.f-view-more").addClass("view-more-fix");
+    }
   });
-
-  /*==================================
-    =	      Mesonry Activation       =
-    ===================================*/
-
-  $(".masonry-activation").imagesLoaded(function () {
-    // init Isotope
-    var $grid = $(".masonry-wrap").isotope({
-      itemSelector: ".masonary-item",
-      percentPosition: true,
-      transitionDuration: "0.7s",
-      masonry: {
-        // use outer width of grid-sizer for columnWidth
-        columnWidth: 2,
-        percentPosition: true,
-      },
-    });
-  });
-
-  /*=============================================
-    =            background image            =
-    =============================================*/
-
+  function submitData() {
+    $("#fApplyStep1").submit();
+  }
+  function submitData() {
+    $("#fApplyStep1").submit();
+  }
   var bgSelector = $(".bg-img");
   bgSelector.each(function (index, elem) {
     var element = $(elem),
@@ -338,17 +250,13 @@
     element.css("background-image", "url(" + bgSource + ")");
   });
 
-  /*=============================================
-    =            wavify activation            =
-    =============================================*/
-
   if ($("#feel-the-wave , .feel-the-wave").length) {
     $("#feel-the-wave , .feel-the-wave").wavify({
       height: 80,
       bones: 5,
       amplitude: 100,
       color: "rgba(224,238,255,0.5)",
-      //color: 'url(#gradient1)',
+
       speed: 0.15,
     });
   }
@@ -359,18 +267,12 @@
       bones: 4,
       amplitude: 60,
       color: "rgba(224,238,255,0.4)",
-      //color: 'url(#gradient2)',
+
       speed: 0.25,
     });
   }
 
-  /*=====  End of wavify activation  ======*/
-
   $(document).ready(function () {
-    /*=============================================
-    =            swiper slider activation            =
-    =============================================*/
-
     var brandLogoSlider = new Swiper(".brand-logo-slider__container", {
       slidesPerView: 6,
       loop: true,
@@ -812,13 +714,8 @@
         },
       },
     });
-
-    /*=====  End of swiper slider activation  ======*/
   });
 
-  /* =====================================
-        Fullpage Scroll Animation   
-    ======================================*/
   if ($("#fullpage").length) {
     $("#fullpage").fullpage({
       scrollBar: false,
@@ -836,19 +733,12 @@
     });
   }
 
-  /*=============================================
-    =            circle progress active            =
-    =============================================*/
-
   $(".chart-progress , .chart-progress__box").appear(function () {
     $(".chart-progress, .chart-progress__box").circleProgress({
       startAngle: (-Math.PI / 4) * 2,
     });
   });
 
-  /*======================================
-    =       Countdown Activation          =     
-    ======================================*/
   $("[data-countdown]").each(function () {
     var $this = $(this),
       finalDate = $(this).data("countdown");
@@ -861,11 +751,6 @@
     });
   });
 
-  /*======================================
-    =       instagram image slider        =     
-    ======================================*/
-
-  // User Changeable Access
   var activeId2 = $("#instafeed"),
     myTemplate2 =
       '<div class="grid-item"><div class="instagram-item"><a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /> <div class="instagram-hvr-content"><span class="tottallikes"><i class="fa fa-heart"></i>{{likes}}</span><span class="totalcomments"><i class="fa fa-comments"></i>{{comments}}</span></div> </a></div></div>';
@@ -887,9 +772,6 @@
     userFeed2.run();
   }
 
-  /* ==================================
-    =          Option Demo              =
-    =====================================*/
   var $demoOption = $(".demo-option-container");
 
   $(".quick-option").on("click", function (e) {
@@ -899,18 +781,6 @@
       })();
   });
 
-  /*=============================================
-    =            counter up active            =
-    =============================================*/
-
-  $(".counter").counterUp({
-    delay: 10,
-    time: 1000,
-  });
-
-  /*===================================
-        Svg Icon Draw
-    ====================================*/
   var $svgIconBox = $(".single-svg-icon-box");
   $svgIconBox.each(function () {
     var $this = $(this),
@@ -922,10 +792,6 @@
       $vivus.reset().play();
     });
   });
-
-  /*=====================================
-    =          Countdown Time Circles     =
-    =======================================*/
 
   $("#DateCountdown").TimeCircles({
     animation: "smooth",
@@ -956,10 +822,6 @@
     },
   });
 
-  /*=================================- 
-    =        Scroll Up Color Change    =
-    ==================================-*/
-
   $(".slide-scroll-bg")
     .height(".slide-scroll-bg")
     .scrollie({
@@ -971,27 +833,16 @@
       },
     });
 
-  /*=============================================
-    =            light gallery active            =
-    =============================================*/
+  // $(".popup-images").lightGallery();
 
-  $(".popup-images").lightGallery();
+  // $(".video-popup").lightGallery();
 
-  $(".video-popup").lightGallery();
-
-  /*=============================================
-        showcoupon toggle function
-   =============================================*/
   $("#showcoupon").on("click", function () {
     $("#checkout-coupon").slideToggle(500);
   });
   $("#chekout-box-2").on("change", function () {
     $(".ship-box-info").slideToggle("100");
   });
-
-  /*=============================================
-    =            reveal footer active            =
-    =============================================*/
 
   var revealId = $(".reveal-footer"),
     heightFooter = revealId.outerHeight(),
@@ -1018,30 +869,4 @@
       $(".loadMoreBtn").text("All items displayed").addClass("noContent");
     }
   });
-
-  /* ====================================
-    =       All Animation For Fade Up      =
-    =======================================*/
-
-  /*  $(window).on('load', function () {
-        function allAnimation() {
-            $('.move-up').css('opacity', 0);
-            $('.move-up').waypoint(function () {
-                $('.move-up').addClass('animate');
-            }, {
-                offset: '90%'
-            });
-        }
-        allAnimation();
-
-        function allAnimationx() {
-            $('.move-up-x').css('opacity', 0);
-            $('.move-up-x').waypoint(function () {
-                $('.move-up-x').addClass('animate');
-            }, {
-                offset: '90%'
-            });
-        }
-        allAnimationx();
-    })*/
 })(jQuery);
