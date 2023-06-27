@@ -17605,3 +17605,6 @@ select {
   width: 150px;
   height: 28px;
 }
+.form-check.form-check-inline input{
+border: 0;
+}
