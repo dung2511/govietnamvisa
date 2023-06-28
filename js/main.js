@@ -616,6 +616,9 @@
     });
 
     var carouselSlider = new Swiper(".projects-slider__container", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
       slidesPerView: "auto",
       slidesPerGroup: 1,
       loop: true,

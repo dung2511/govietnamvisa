@@ -2584,10 +2584,10 @@ blockquote cite:before {
   margin: auto;
 }
 .__vnvisa-client-say .list-client-say .rplg .rplg-review-name {
-  color: #222 !important;
+  color: #ffffff !important;
 }
 .__vnvisa-client-say .list-client-say .rplg-stars path {
-  fill: #fc713f;
+  fill: #FFB800;
 }
 .__vnvisa-client-say .list-client-say .rplg .rplg-review-time {
   color: #666 !important;
@@ -2632,12 +2632,8 @@ blockquote cite:before {
     margin-bottom: 0 !important;
   }
 }
-.__vnvisa-client-say .list-client-say .rplg .rplg-box {
-  margin: 0 !important;
-  height: 100%;
-}
 .__vnvisa-client-say .list-client-say .rplg .rplg-box .rplg-box-content {
-  height: 176px !important;
+  height: 100% !important;
 }
 .__vnvisa-client-say .other-container .wrap-title-client-say {
   text-align: left !important;
@@ -4098,6 +4094,7 @@ blockquote cite:before {
   background: #d8d8d8;
 }
 .btn-blue-grad {
+  font-size: 1rem;
   color: #fff !important;
   font-weight: 500;
   background: #b10800 !important;
@@ -4105,7 +4102,8 @@ blockquote cite:before {
   border-width: 0px;
   position: relative;
   z-index: 1;
-  border-radius: 8px;
+  border-radius: 30px;
+  padding: 0.75rem 1.5rem;
 }
 .btn-blue-grad:hover {
   color: #fff;
@@ -4166,12 +4164,7 @@ blockquote cite:before {
   color: #fff;
   background: #009eeb;
 }
-.btn-apply {
-  background: linear-gradient(315deg, #df1e26 0%, #eb5757 100%) !important;
-  border-radius: 8px !important;
-  color: #fff !important;
-  font-weight: 500 !important;
-}
+
 .btn-apply:hover {
   color: #fff !important;
 }
@@ -4294,7 +4287,7 @@ blockquote cite:before {
   font-weight: bold;
 }
 .__wraper-banner {
-  background-image: url("../images/home-banner-new-2.webp");
+  background-image: url("../images/home-banner-new-2.png");
 }
 @media (min-width: 768px) {
   .__wraper-banner > .container {
@@ -4357,7 +4350,7 @@ blockquote cite:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 .banner--bg .col-lg-12 {
@@ -4382,6 +4375,11 @@ blockquote cite:before {
 }
 .banner--bg .__home-search .home-title {
   color: #fff;
+  text-align: left;
+}
+.banner--bg .__home-search .home-des {
+  color: #fff;
+  text-align: left;
 }
 @media (max-width: 479px) {
   .banner--bg .__home-search {
@@ -4403,11 +4401,15 @@ blockquote cite:before {
   align-items: center;
   justify-content: space-between;
   padding: 10px 11px 10px 24px;
-  border-radius: 12px;
+  border-radius: 30px;
   position: relative;
-  width: 480px;
+  /* width: 480px; */
   margin: auto;
 }
+.wrap-search .title_wrap_search {
+  text-align: left;
+}
+
 @media (max-width: 479px) {
   .banner--bg .__home-search .__vnvisa-search {
     position: static;
@@ -4423,6 +4425,7 @@ blockquote cite:before {
   text-align: left;
   display: block;
   margin: 0;
+  font-weight: 600;
 }
 .banner--bg .__home-search .__vnvisa-search .search-nationality input {
   width: 100%;
@@ -5847,15 +5850,53 @@ ul.list-items-success li::marker {
   .head-table {
     line-height: 25px !important;
   }
-} /*# sourceMappingURL=main.css.map */
+}
 @media (max-width: 768px) {
   .__vnvisa-partners-full-w .list-partners-full-w {
     display: none;
   }
-  .__vnvisa-partners-full-w .list-partners-mb .owl-carousel{
+  .__vnvisa-partners-full-w .list-partners-mb .owl-carousel {
     display: block;
   }
 }
 .owl-theme .owl-nav.disabled + .owl-dots:nth-child(1) {
   display: none;
+}
+.__main-menu-vnvisa ul li {
+  display: flex;
+  text-transform: capitalize;
+}
+.btn-apply .call-header {
+  padding: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.btn-apply {
+  background: #28b446 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 30px;
+  padding: 0.5rem 1rem 0.5rem 0.75rem;
+}
+.btn-apply .number-phone-header {
+  text-align: left;
+}
+.btn-apply .number-phone-header p {
+  margin-bottom: 0;
+  line-height: normal;
+}
+.btn-apply .number-phone-header .header-title-contact {
+font-size: 0.75rem;
+}
+.btn-discover {
+  background-color: #D6001A !important;
+  border-radius: 30px;
+  padding: 11px 42px;
+}
+.feature-large-images-wrapper .section-title-wrap hr {
+  width: 39px;
+  height: 2px;
 }

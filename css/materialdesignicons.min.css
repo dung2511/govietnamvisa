@@ -16792,3 +16792,6 @@
 }
 
 /*# sourceMappingURL=materialdesignicons.css.map */
+.mdi-folder-arrow-down-outline::before {
+  content: "\F19E9";
+}

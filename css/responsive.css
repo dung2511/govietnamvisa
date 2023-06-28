@@ -366,7 +366,7 @@
   }
 
   .process-icon {
-    display: inherit;
+    /* display: inherit; */
     padding-top: 25px;
   }
 
@@ -390,7 +390,7 @@
   }
 
   .process-title-main {
-    margin: -25px 0 0 40px;
+    /* margin: -25px 0 0 40px; */
     font-size: 12px;
   }
 
@@ -400,17 +400,19 @@
   }
 
   .process-title-sub {
-    margin: 18px 0 0 47px;
+    /* margin: 18px 0 0 47px; */
     line-height: 20px;
     font-size: 12px;
     width: 60%;
+    display: none;
   }
 
   .process-title-sub1 {
-    margin: 18px 0 0 47px;
+    /* margin: 18px 0 0 47px; */
     line-height: 20px;
     font-size: 12px;
     width: 60%;
+    display: none;
   }
 
   .btn-main-apply {

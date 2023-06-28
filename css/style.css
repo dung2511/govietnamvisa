@@ -4,7 +4,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 html,
 body {
   height: 100%;
@@ -250,7 +249,7 @@ mark {
 }
 
 .bg-footer {
-  background: #ebebeb;
+  background: #920011;
 }
 
 .bg-theme-default {
@@ -691,10 +690,6 @@ input[type="checkbox"] {
   content: "\f104";
 }
 
-.swiper-button-next i::before {
-  content: "\f105";
-}
-
 .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   -o-transition-timing-function: linear !important;
@@ -707,6 +702,15 @@ input[type="checkbox"] {
 
 .single-element-wrap ul li:last-child {
   margin-bottom: 0;
+}
+.breadcrumb-area-about-us {
+  background-color: #f6f2ed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-bottom-width: 0px;
+  background-size: cover;
+  background-image: url(../images/bg-about-us.png);
+  padding: 75px 0;
 }
 .breadcrumb-area {
   background-color: #f6f2ed;
@@ -739,7 +743,7 @@ input[type="checkbox"] {
 }
 
 .breadcrumb-list li a {
-  color: #9a9797;
+  color: #fff;
 }
 
 @media only screen and (max-width: 767px),
@@ -4759,7 +4763,6 @@ input[type="checkbox"] {
   display: flex;
   justify-content: center;
   padding: 30px 0;
-  background-color: #e1e1e1;
 }
 
 .copyright-text {
@@ -4792,9 +4795,9 @@ input[type="checkbox"] {
 }
 
 .footer-widget__title {
+  color: #fff;
   margin-top: -3px;
-  color: #333333;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .footer-widget__list li {
@@ -5137,7 +5140,20 @@ input[type="checkbox"] {
   font-size: 20px;
   margin-left: 10px;
 }
-
+.btn-project {
+  background: #1f7e9c;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  border-style: solid;
+  border-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 18px;
+  text-align: center;
+  letter-spacing: 0em;
+  color: #fff;
+  display: inline-table;
+}
 .btn-book {
   background: #1f7e9c;
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
@@ -5152,7 +5168,6 @@ input[type="checkbox"] {
   letter-spacing: 0em;
   color: #fff;
   display: inline-table;
-  width: 110px;
 }
 
 .btn-book:hover,
@@ -5164,8 +5179,13 @@ input[type="checkbox"] {
 }
 
 .btn--bookcolor {
-  background: #1f7e9c;
+  margin-top: 24px;
+  background: #d6001a !important;
+  padding: 9px 18px !important;
   color: #fff;
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 30px;
 }
 
 .btn-maincolor {
@@ -5173,19 +5193,14 @@ input[type="checkbox"] {
 }
 
 .btn {
-  font-size: 15px;
   font-weight: 500;
   border-style: solid;
-  border-radius: 5px;
   border-color: transparent;
   border: 1px solid transparent;
-  padding: 0 26px;
   text-align: center;
   -webkit-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  height: 54px;
-  line-height: 54px;
   letter-spacing: 0em;
   color: #ffffff;
   background: #086ad8;
@@ -6141,7 +6156,9 @@ input[type="checkbox"] {
     font-size: 24px;
   }
 }
-
+.fun-fact-wrapper .heading {
+  text-transform: uppercase;
+}
 .cybersecurity-about-text .text {
   font-size: 18px;
   margin-bottom: 20px;
@@ -7572,9 +7589,6 @@ input[type="checkbox"] {
   margin-bottom: 0;
 }
 
-/*======================================
-=          27. Listing Css              =
-=======================================*/
 .separator-list .list-item {
   position: relative;
   margin-bottom: 6px;
@@ -7606,31 +7620,22 @@ input[type="checkbox"] {
 
 .check-list .list-item {
   position: relative;
-  margin-bottom: 10px;
-  color: #212121;
-  font-size: 18px;
+  /* margin-bottom: 10px; */
+  color: #888888;
+  font-size: 14px;
   font-weight: 500;
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .check-list .list-item span {
   font-size: 24px;
 }
-/*
-.check-list .list-item::before {
-  color: #F63636;
-  content: '\F134';
-  position: absolute;
-  top: 12px;
-  left: 0;
-  display: block;
-  line-height: 1;
-  font: normal normal normal 20px/1 "Material Design Icons";
-}*/
 
 .check-list .list-item i {
   color: #f63636;
   font-size: 20px;
-  margin: 5px 10px 0 0;
 }
 
 .check-list .list-item:last-child {
@@ -7650,19 +7655,6 @@ input[type="checkbox"] {
   position: relative;
   padding-left: 20px;
   margin-bottom: 12px;
-}
-
-.circle-list .list-item::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0;
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #8c8c8c;
-  margin: 0 10px 0 0;
 }
 
 .circle-list .list-item a:hover {
@@ -13432,9 +13424,6 @@ blockquote {
   }
 }
 
-/*=============================================
-=         37. Processing Hero Css             =
-=============================================*/
 .appointment-hero-bg {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -15218,9 +15207,11 @@ blockquote {
 .section-title-wrap h2 {
   color: #222222;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
   letter-spacing: -0.406154px;
   line-height: initial;
+  margin-top: 48px;
+  margin-bottom: 32px;
 }
 
 .section-title-wrap h6 {
@@ -15233,8 +15224,8 @@ blockquote {
 }
 
 .cta-bg-image_tree {
-  background-color: #f6f2ed;
   background-image: url(../images/BG.png);
+  background-color: rgba(53, 0, 6, 0.9);
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -15243,41 +15234,63 @@ blockquote {
   color: #fff;
   font-size: 32px;
   font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .process-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .process-step {
+  width: 26%;
   margin-right: 14%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .process-icon {
+  width: 90px;
+  height: 90px;
+  background-color: #d6001a;
   text-align: center;
   position: relative;
-  padding-top: 44px;
+  padding-top: 12px;
   margin-bottom: 10px;
+  border-radius: 20px;
 }
-
+.process-icon .process_icon_step {
+  display: flex;
+  justify-content: center;
+}
+.process-icon p {
+  font-size: 18px;
+  color: #252525;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
 .process-icon img {
-  width: 110px;
-  height: 85px;
 }
 
 .process-step:before {
   position: absolute;
-  right: -123px;
-  width: 110px;
+  right: -225px;
+  width: 100%;
   height: 24px;
   background-image: url("../images/Arrowstep.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   content: "";
-  top: 80px;
+  top: 40px;
   display: block;
 }
 
@@ -15319,50 +15332,36 @@ blockquote {
   text-align: center;
 }
 
-.process-title:before {
-  position: absolute;
-  top: 35px;
-  left: 8px;
-  width: 100%;
-  height: 38px;
-  background-image: url(../images/Arrow4.png);
-  content: "";
-  background-repeat: no-repeat;
-  z-index: 1;
-  background-position: left top;
-  background-size: contain;
-}
-
 .process-title-main {
-  margin: -10px 0 0 55px;
   font-size: 18px;
   font-weight: 500;
   line-height: initial;
+  text-align: center;
 }
 
 .process-title-sub {
-  margin: 37px 0 0 55px;
-  display: inline;
-  position: absolute;
+  display: inline-block;
+  /* position: absolute; */
   line-height: 20px;
+  text-align: center;
 }
 
 .process-title-sub1 {
-  margin: 18px 0 0 55px;
-  display: inline;
-  position: absolute;
+  display: inline-block;
+  /* position: absolute; */
   line-height: 20px;
+  text-align: center;
 }
 
 .btn-main-apply {
-  background: #ffffff;
+  background: #d6001a;
   border-radius: 50px;
   padding: 5px 50px;
   border: 2px solid #f61d17;
-  color: #f71d17;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 500;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1px;
 }
 
@@ -15374,30 +15373,9 @@ blockquote {
   border: 2px solid #f61d17;
 }
 
-.btn-main-apply:after {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  width: 55px;
-  height: 55px;
-  background-image: url(../images/Vector.png);
-  content: "";
-  background-repeat: no-repeat;
-  z-index: 1;
-  background-position: left top;
-  background-size: contain;
-}
-
-.btn-main-hand:after {
-  background-image: url(../images/Group.png);
-  background-repeat: no-repeat;
-  z-index: 1;
-  background-position: left top;
-  background-size: contain;
-}
-
 .feature-list-button-box {
   position: relative;
+  margin-top: 14px;
 }
 
 .btn-margin {
@@ -15405,41 +15383,49 @@ blockquote {
 }
 
 .content-total-visa {
-  background-color: #fff;
   height: 95%;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .title-total {
-  border-bottom: 1px solid #a4a4a4;
-  text-align: center;
+  text-align: right;
   font-size: 18px;
   font-weight: 500;
+  margin-top: 8px;
 }
 
 .title-total span {
-  color: #f13d38;
-  font-size: 32px;
-  font-weight: 500;
+  color: #252525;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* .bg-theme-new {
   background: #9dcdde;
 } */
-
 .projects-title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(10, 49, 82, 0.5);
-  margin: 0;
-  padding: 10px 10px;
+  margin-top: -80px;
+  position: relative;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 23;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-weight: bold;
   line-height: 18px;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 0 0px 8px 8px;
   align-items: center;
+}
+.projects-title .title_project {
+  width: fit-content;
+  background: #fff;
+  margin: 0;
+  padding: 27px 35px;
+  font-weight: bold;
+  line-height: 18px;
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
 }
 
 .projects-image-box {
@@ -15454,7 +15440,8 @@ blockquote {
 }
 
 .button-text-project {
-  color: #fff;
+  color: #252525;
+  text-transform: uppercase;
 }
 
 .col-form-label {
@@ -15553,7 +15540,6 @@ select.fix-mobile-select {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   height: calc(1.5em + 0.75rem + 2px);
-  background-color: #fff;
   color: #495057;
 }
 
@@ -15729,6 +15715,9 @@ i[data-toggle="popover"] {
 
 .itemAuthorLatest h3 {
   font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+
 }
 
 .itemAuthorLatest .circle-list {
@@ -16995,7 +16984,6 @@ ul.list-country li a:hover {
 
 .projects-image img {
   width: 100%;
-  height: 219px;
 }
 
 /*--List service--*/
@@ -17372,8 +17360,11 @@ tbody tr {
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
+  text-transform: uppercase;
 }
-
+.brochure-btn span img {
+  margin-right: 12px;
+}
 .widget-content .download-item p a {
   color: #b10800;
   font-weight: normal;
@@ -17605,6 +17596,105 @@ select {
   width: 150px;
   height: 28px;
 }
-.form-check.form-check-inline input{
-border: 0;
+.form-check.form-check-inline input {
+  border: 0;
+}
+.header-top-bar-info {
+  background-color: #d6001a;
+  color: #fff;
+}
+.feature-large-images-wrapper .section-title-wrap .heading {
+  text-transform: uppercase;
+}
+.feature-large-images-wrapper .section-title-wrap .section-sub-title {
+  text-align: left;
+}
+.cybersecurity-about-box .col-lg-12 {
+  display: flex;
+  justify-content: center;
+}
+.process-title-main {
+  text-transform: uppercase;
+}
+.cta-bg-image_tree {
+  padding-top: 60px;
+  padding-bottom: 144px;
+}
+.cybersecurity-about-box {
+  margin-top: -323px;
+}
+@media (max-width: 1024px) {
+  .cybersecurity-about-box {
+    display: none;
+  }
+  .process-step:before {
+    right: -180px;
+  }
+}
+@media (max-width: 768px) {
+  .process-step:before {
+    right: -131px;
+  }
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.contact-form .form-group {
+  width: calc(50% - 24px);
+  margin-bottom: 0;
+}
+.form-control {
+  background-color: #f5f5f5;
+}
+.feature-check-your-fees {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 10px 14px 40px 0px rgba(0, 0, 0, 0.08);
+}
+.feature-icon-wrapper {
+  background-color: #fff;
+}
+.feature-icon-wrapper .container {
+  padding: 0;
+}
+.feature-check-your-fees > .col-lg-5 {
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .feature-check-your-fees > .col-lg-5 {
+    display: none;
+  }
+}
+.logo-footer {
+  justify-content: center;
+}
+.footer-area-wrapper {
+  color: #fff;
+}
+.bg-client-think {
+  background-image: url(../images/bg-client-think.png);
+}
+.client-think {
+  max-height: 650px;
+}
+
+.client-say-title {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .header_icon-call {
+    display: none;
+  }
+}
+.download-item a span{
+display: flex;
+align-items: center;
+gap: 8px;
+color: #D6001A;
 }
