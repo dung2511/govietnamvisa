@@ -174,10 +174,10 @@
 
   #no-more-tables td {
     border: none;
-    border: 1px solid #fff;
+    border: 1px solid #ebebeb;
     white-space: normal;
     text-align: left;
-    background: #edf6f9;
+    background: #ffffff;
     color: #333333;
     max-height: 76px;
   }
@@ -205,13 +205,6 @@
     align-items: center;
     font-weight: 500;
     color: #333333;
-  }
-
-  /*
- Label the data
- */
-  #no-more-tables td:before {
-    content: attr(data-title);
   }
 
   .footer-step {
@@ -273,7 +266,8 @@
   }
 
   .button-info-step {
-    display: inline-block !important;
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
 
@@ -574,7 +568,6 @@
   }
 
   .sidebar-widget {
-    border-top: 1px dashed #686868;
     padding: 20px 0 0 0;
   }
 
@@ -587,10 +580,7 @@
   }
 
   .bg-left-blogvisa {
-    background: #f8f8f8;
-    border: 1px solid #ffffff;
-    box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.25);
-    margin: 30px 0 0 0;
+    margin: 30px 0;
   }
 
   .section-space--ptb_100 {
@@ -834,12 +824,12 @@
 
   #no-more-tables td {
     border: none;
-    border: 1px solid #fff;
+    border: 1px solid #ebebeb;
     position: relative;
     padding-left: 50%;
     white-space: normal;
     text-align: left;
-    background: #edf6f9;
+    background: #ffffff;
     color: #333333;
   }
 
@@ -860,10 +850,6 @@
     align-items: center;
     font-weight: 500;
     color: #333333;
-  }
-
-  #no-more-tables td:before {
-    content: attr(data-title);
   }
 
   .col-info-applicant {
@@ -994,15 +980,6 @@
     width: 100% !important;
   }
 }
-
-/* MEDIA QUERIES max-width 768px - TABLETS  */
-
-/*============================================================================================*/
-
-/* MEDIA QUERIES max-width 767px - MOBILE LANDSCAPE  */
-
-/*============================================================================================*/
-
 @media (max-width: 480px) {
   .img-hidder-right img {
     width: 25px;
@@ -1012,6 +989,28 @@
   .header__logo > a img {
     width: 180px;
     height: auto !important;
+  }
+  #no-more-tables td:before {
+    content: attr(data-title);
+  }
+  #no-more-tables td:before {
+    position: absolute;
+    left: 0px;
+    width: 45%;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* white-space: nowrap; */
+    text-align: left;
+    font-weight: bold;
+    line-height: initial;
+    top: 0px;
+    background: #d0e5ed;
+    height: -webkit-fill-available;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #333333;
   }
 }
 

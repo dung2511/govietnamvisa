@@ -257,7 +257,7 @@
             </div>
         </div>
     </div>
-    <div class="breadcrumb-area">
+    <div class="breadcrumb-area-fees">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -266,7 +266,8 @@
 
                         <ul class="breadcrumb-list">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item active">Fees</li>
+
+                            <li class=" active"><i class="mdi mdi-chevron-double-right"></i> Fees</li>
                         </ul>
 
                     </div>
@@ -282,326 +283,52 @@
                         <div class="main-blog-wrap">
                             <div class="single-blog-item">
                                 <div class="post-info-fees lg-blog-post-info">
-                                    <form action="/step_1" class="stepform" id="fApplyStep1" method="post">
-                                        <div style="display: none;">
-                                            <span class="left">Type of visa:</span>
-                                            <span class="right">
-                                                <select class="dropFull" id="typeVisaFee" name="typeVisaFee"
-                                                    onchange="changeCheckOutFee()" style="width:90%">
-                                                    <option value="4">Vietnam Evisa (for going by air, land, ship),
-                                                        available for 1 month single only</option>
-                                                    <option value="10">Vietnam Visa On Arrival</option>
-                                                    <option value="11">Recomended package (Vietnam Evisa &amp; Travel
-                                                        Insurance - 10% discount)</option>
-                                                    <option value="3">FULL PACKAGE - 10% discount (include Vietnam
-                                                        evisa, private evisa, airport arrival assistant)</option>
-                                                    <option value="1">LUXURY FULL PACKAGE -15% discoun.t (include evisa,
-                                                        private evisa, VIP arrival assistant and Travel insurance)
-                                                    </option>
-                                                    <option value="8">Vietnam visa run from Ho Chi Minh</option>
-                                                    <option value="9">Vietnam visa run from Da Nang</option>
-                                                </select>
-                                            </span>
-                                        </div>
+                                    <form action="" class="stepform" id="fApplyStep1" method="post">
                                         <div class="fee-search">
                                             <h2>Visa service fee calculator</h2>
-
                                             <div class="bg-fee-search">
                                                 <div class="content-fee-search">
-                                                    <div class="form-group row">
-                                                        <label for=""
-                                                            class="col-sm-3 col-form-label">Nationality</label>
-                                                        <div class="col-sm-6">
+                                                    <div class="form-group col-lg-6">
+                                                        <label for="CountryId1"
+                                                            class="col-12 p-0 col-form-label">Nationality</label>
+                                                        <div class="col-12 p-0">
                                                             <select class="form-control select2-hidden-accessible"
                                                                 id="CountryId1" name="CountryId1"
                                                                 data-select2-id="CountryId1" tabindex="-1"
                                                                 aria-hidden="true">
                                                                 <option value="0" data-select2-id="2">Select your
                                                                     nationality</option>
-                                                                <option value="197">Afghanistan</option>
-                                                                <option value="11">Albania</option>
-                                                                <option value="238">Algieria</option>
-                                                                <option value="12">American Samoa</option>
-                                                                <option value="234">Angola</option>
-                                                                <option value="235">Antigua and Barbuda </option>
-                                                                <option value="13">Argentina</option>
-                                                                <option value="172">Armenia</option>
-                                                                <option value="15">Australia</option>
-                                                                <option value="14">Austria</option>
-                                                                <option value="16">Azerbaijan</option>
-                                                                <option value="218">Bahrain</option>
-                                                                <option value="192">Bangladesh</option>
-                                                                <option value="17">Barbados</option>
-                                                                <option value="18">Belarus</option>
-                                                                <option value="223">Belarus </option>
-                                                                <option value="19">Belgium</option>
-                                                                <option value="20">Belize</option>
-                                                                <option value="239">Benin</option>
-                                                                <option value="21">Bermuda </option>
-                                                                <option value="180">Bhutan</option>
-                                                                <option value="23">Bolivia</option>
-                                                                <option value="167">Bosnia and Herzegonia </option>
-                                                                <option value="216">Botswana</option>
-                                                                <option value="24">Bouvet</option>
-                                                                <option value="25">Brazil</option>
-                                                                <option value="26">Brunei</option>
-                                                                <option value="27">Bulgaria</option>
-                                                                <option value="240">Burundi</option>
-                                                                <option value="28">Cambodia</option>
-                                                                <option value="199">Cameroon</option>
-                                                                <option value="29">Canada</option>
-                                                                <option value="32">Chile</option>
-                                                                <option value="170">China</option>
-                                                                <option value="33">Colombia</option>
-                                                                <option value="34">Comoros</option>
-                                                                <option value="217">Congo</option>
-                                                                <option value="35">Cook Islands</option>
-                                                                <option value="36">Costa Rica</option>
-                                                                <option value="203">Cote DIvoire</option>
-                                                                <option value="37">Croatia</option>
-                                                                <option value="38">Cuba</option>
-                                                                <option value="39">Cyprus</option>
-                                                                <option value="40">Czech Republic</option>
-                                                                <option value="41">Denmark</option>
-                                                                <option value="228">Denmark</option>
-                                                                <option value="42">Djibouti</option>
-                                                                <option value="43">Dominica</option>
-                                                                <option value="44">Ecuador</option>
-                                                                <option value="45">Egypt</option>
-                                                                <option value="46">EL Salvador</option>
-                                                                <option value="47">Equatorial Guinea</option>
-                                                                <option value="48">Estonia</option>
-                                                                <option value="194">Ethiopia</option>
-                                                                <option value="49">Falkland</option>
-                                                                <option value="50">Faroe Islands</option>
-                                                                <option value="168">Fiji</option>
-                                                                <option value="51">Finland</option>
-                                                                <option value="230">Finland</option>
-                                                                <option value="219">France</option>
-                                                                <option value="52">France</option>
-                                                                <option value="242">Gabon</option>
-                                                                <option value="243">Gambia</option>
-                                                                <option value="53">Georgia</option>
-                                                                <option value="54">Germany</option>
-                                                                <option value="222">Germany</option>
-                                                                <option value="213">Ghana</option>
-                                                                <option value="55">Gibraltar</option>
-                                                                <option value="56">Great Britain</option>
-                                                                <option value="57">Greece</option>
-                                                                <option value="58">Greenland</option>
-                                                                <option value="59">Grenada</option>
-                                                                <option value="60">Guadeloupe</option>
-                                                                <option value="61">Guam</option>
-                                                                <option value="62">Guatemala</option>
-                                                                <option value="63">Guernsey </option>
-                                                                <option value="64">Guiana</option>
-                                                                <option value="241">Guinea</option>
-                                                                <option value="211">Guinea-Bissau</option>
-                                                                <option value="65">Guyana</option>
-                                                                <option value="66">Heard Island and McDonald Islands
-                                                                </option>
-                                                                <option value="67">Honduras</option>
-                                                                <option value="68">Hong Kong</option>
-                                                                <option value="69">Hungary</option>
-                                                                <option value="70">Iceland</option>
-                                                                <option value="71">India</option>
-                                                                <option value="72">Indonesia</option>
-                                                                <option value="209">Iran</option>
-                                                                <option value="210">Iraq</option>
-                                                                <option value="73">Ireland</option>
-                                                                <option value="74">Isle Of Man</option>
-                                                                <option value="75">Israel</option>
-                                                                <option value="76">Italy</option>
-                                                                <option value="6">Italy</option>
-                                                                <option value="220">Italy</option>
-                                                                <option value="77">Jamaica</option>
-                                                                <option value="78">Japan</option>
-                                                                <option value="224">Japan</option>
-                                                                <option value="79">Jersey</option>
-                                                                <option value="195">Jordan</option>
-                                                                <option value="80">Kazakhstan</option>
-                                                                <option value="184">Kenya</option>
-                                                                <option value="82">Kyrgyzstan</option>
-                                                                <option value="3">Laos</option>
-                                                                <option value="84">Latvia</option>
-                                                                <option value="214">Lebanon</option>
-                                                                <option value="237">Lebanon</option>
-                                                                <option value="207">Lesotho</option>
-                                                                <option value="244">Liberia</option>
-                                                                <option value="245">Libya</option>
-                                                                <option value="85">Liechtenstein</option>
-                                                                <option value="86">Lithuania</option>
-                                                                <option value="87">Luxembourg</option>
-                                                                <option value="88">Macau</option>
-                                                                <option value="89">Macedonia</option>
-                                                                <option value="90">Madagascar</option>
-                                                                <option value="246">Malawi</option>
-                                                                <option value="4">Malaysia</option>
-                                                                <option value="92">Maldives</option>
-                                                                <option value="247">Mali</option>
-                                                                <option value="248">Malpies</option>
-                                                                <option value="94">Malta</option>
-                                                                <option value="95">Marshall</option>
-                                                                <option value="96">Martinique</option>
-                                                                <option value="97">Mauritius</option>
-                                                                <option value="98">Mayotte</option>
-                                                                <option value="99">Mexico</option>
-                                                                <option value="100">Micronesia</option>
-                                                                <option value="101">Moldova</option>
-                                                                <option value="102">Monaco</option>
-                                                                <option value="103">Mongolia</option>
-                                                                <option value="165">Montenegro</option>
-                                                                <option value="104">Montserrat</option>
-                                                                <option value="205">Morocco</option>
-                                                                <option value="105">Mozambique</option>
-                                                                <option value="106">Myanmar</option>
-                                                                <option value="193">Namibia</option>
-                                                                <option value="107">Nauru</option>
-                                                                <option value="178">Nepal</option>
-                                                                <option value="108">Netherlands</option>
-                                                                <option value="110">New Caledonia</option>
-                                                                <option value="112">NewZealand</option>
-                                                                <option value="113">Nicaragua</option>
-                                                                <option value="249">Niger</option>
-                                                                <option value="174">Nigeria</option>
-                                                                <option value="114">Niue</option>
-                                                                <option value="81">North Korea</option>
-                                                                <option value="115">Northern Ireland</option>
-                                                                <option value="111">Northern Mariana Islands</option>
-                                                                <option value="116">Norway</option>
-                                                                <option value="227">Norway</option>
-                                                                <option value="185">Oman</option>
-                                                                <option value="191">Pakistan</option>
-                                                                <option value="117">Palau</option>
-                                                                <option value="196">Palestine</option>
-                                                                <option value="118">Panama</option>
-                                                                <option value="179">Papua New Guinea </option>
-                                                                <option value="119">Paraguay</option>
-                                                                <option value="120">Peru</option>
-                                                                <option value="121">Pitcairn Islands</option>
-                                                                <option value="123">Poland</option>
-                                                                <option value="124">Polynesia</option>
-                                                                <option value="125">Portugal </option>
-                                                                <option value="126">Puerto Rico</option>
-                                                                <option value="204">Quata</option>
-                                                                <option value="127">Reunion</option>
-                                                                <option value="128">Romania</option>
-                                                                <option value="129">Russia</option>
-                                                                <option value="229">Russia</option>
-                                                                <option value="250">Rwanda</option>
-                                                                <option value="130">Saint Helena</option>
-                                                                <option value="131">Saint Kitts and Nevis</option>
-                                                                <option value="132">Saint Lucia</option>
-                                                                <option value="133">Saint Pierre and Miquelon</option>
-                                                                <option value="134">Saint Vincent and the Grenadines
-                                                                </option>
-                                                                <option value="135">San Marino</option>
-                                                                <option value="186">Saudi Arabia</option>
-                                                                <option value="136">Scotland</option>
-                                                                <option value="212">Senegal</option>
-                                                                <option value="166">Serbia</option>
-                                                                <option value="251">Seychelles</option>
-                                                                <option value="236">Sierra Leon</option>
-                                                                <option value="137">Singapore</option>
-                                                                <option value="138">Slovakia</option>
-                                                                <option value="139">Slovenia</option>
-                                                                <option value="140">Solomon Islands</option>
-                                                                <option value="208">Somalia</option>
-                                                                <option value="141">South Africa</option>
-                                                                <option value="142">South Georgia and South Sandwich
-                                                                    Islands</option>
-                                                                <option value="169">South Korea</option>
-                                                                <option value="225">South Korea </option>
-                                                                <option value="221">Spain</option>
-                                                                <option value="143">Spain</option>
-                                                                <option value="181">Srilanka</option>
-                                                                <option value="183">Sudan</option>
-                                                                <option value="144">Suriname</option>
-                                                                <option value="145">Svalbard</option>
-                                                                <option value="146">Swaziland</option>
-                                                                <option value="147">Sweden</option>
-                                                                <option value="226">Sweden</option>
-                                                                <option value="148">Switzerland</option>
-                                                                <option value="200">Syria</option>
-                                                                <option value="149">Taiwan</option>
-                                                                <option value="150">Tanzania</option>
-                                                                <option value="151">Thailand</option>
-                                                                <option value="171">The Philippines</option>
-                                                                <option value="173">Timorese</option>
-                                                                <option value="206">Togo</option>
-                                                                <option value="152">Tokelau</option>
-                                                                <option value="188">Trinidad and Tobago</option>
-                                                                <option value="201">Tunisia</option>
-                                                                <option value="5">Turkey</option>
-                                                                <option value="153">Turkmenistan</option>
-                                                                <option value="154">Turks and Caicos Islands</option>
-                                                                <option value="155">Tuvalu</option>
-                                                                <option value="189">Uganda</option>
-                                                                <option value="156">Ukraine</option>
-                                                                <option value="176">United Arab Emirates</option>
-                                                                <option value="1">United Kingdom</option>
-                                                                <option value="2">United States</option>
-                                                                <option value="157">Uruguay</option>
-                                                                <option value="158">Uzbekistan</option>
-                                                                <option value="159">Vanuatu</option>
-                                                                <option value="160">Vatican</option>
-                                                                <option value="161">Venezuela</option>
-                                                                <option value="162">Virgin Islands</option>
-                                                                <option value="163">Wales</option>
-                                                                <option value="215">Yemen </option>
-                                                                <option value="164">Yugoslavia</option>
-                                                                <option value="202">Zambia</option>
-                                                                <option value="187">Zimbabwe</option>
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <label for="" class="col-sm-3 col-form-label">Number of
+                                                    <div class="form-group col-lg-6">
+                                                        <label for="" class="col-12 p-0 col-form-label">Number of
                                                             visa</label>
-                                                        <div class="col-sm-6">
+                                                        <div class="col-12 p-0">
                                                             <select class="form-control" id="NumberId" name="NumberId"
                                                                 onchange="changeCheckOutFee()">
                                                                 <option value="1">1 Application</option>
-                                                                <option value="2">2 Applications</option>
-                                                                <option value="3">3 Applications</option>
-                                                                <option value="4">4 Applications</option>
-                                                                <option value="5">5 Applications</option>
-                                                                <option value="6">6 Applications</option>
-                                                                <option value="7">7 Applications</option>
-                                                                <option value="8">8 Applications</option>
-                                                                <option value="9">9 Applications</option>
-                                                                <option value="10">10 Applications</option>
-                                                                <option value="11">11 Applications</option>
-                                                                <option value="12">12 Applications</option>
-                                                                <option value="13">13 Applications</option>
-                                                                <option value="14">14 Applications</option>
-                                                                <option value="15">15 Applications</option>
-                                                                <option value="16">16 Applications</option>
-                                                                <option value="17">17 Applications</option>
-                                                                <option value="18">18 Applications</option>
-                                                                <option value="19">19 Applications</option>
-                                                                <option value="20">20 Applications</option>
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <label for="" class="col-sm-3 col-form-label">Time of
+                                                    <div class="form-group col-lg-6">
+                                                        <label for="" class="col-12 p-0 col-form-label">Time of
                                                             visa</label>
-                                                        <div class="col-sm-6">
+                                                        <div class="col-12 p-0">
                                                             <select class="form-control" id="TimeId" name="TimeId"
                                                                 onchange="changeCheckOutFee()">
                                                                 <option value="1">1 month single entry</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-sm-3">
+                                                        <div class="col-12 p-0">
                                                             <span class="text-red-fee"
                                                                 id="timeOfVisaePrice">1x65=65</span>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <label for="" class="col-sm-3 col-form-label">Processing
+                                                    <div class="form-group col-lg-6">
+                                                        <label for="" class="col-12 p-0 col-form-label">Processing
                                                             time</label>
-                                                        <div class="col-sm-6">
+                                                        <div class="col-12 p-0">
                                                             <select class="form-control" id="ProcessId" name="ProcessId"
                                                                 onchange="changeCheckOutFee()">
                                                                 <option value="2">Normal</option>
@@ -613,77 +340,78 @@
                                                                 <option value="10">Last minutes service</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-sm-3">
+                                                        <div class="col-12">
                                                             <span class="text-red-fee"
                                                                 id="processVisaPrice">1x0=0</span>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group row mar-b-0">
-                                                        <label for="" class="col-sm-3 col-form-label">Purpose of
+                                                    <div class="form-group col-lg-6 mar-b-0">
+                                                        <label for="" class="col-12 col-form-label p-0">Purpose of
                                                             visit</label>
-                                                        <div class="col-sm-6">
+                                                        <div class="col-12 d-flex mt-16 p-0">
 
                                                             <div class="form-check form-check-inline">
                                                                 <input checked="checked" class="form-check-input"
-                                                                    id="Purposes0" name="PurposeId"
-                                                                    onchange="changeCheckOutFee()" type="radio"
+                                                                    id="Purposes0" name="PurposeId" type="radio"
                                                                     value="1">
                                                                 <label class="form-check-label"
                                                                     for="Purposes0">Vacation</label>
                                                             </div>
                                                             <div class="form-check form-check-inline">
                                                                 <input class="form-check-input" id="Purposes1"
-                                                                    name="PurposeId" onchange="changeCheckOutFee()"
-                                                                    type="radio" value="2">
+                                                                    name="PurposeId" type="radio" value="2">
                                                                 <label class="form-check-label"
                                                                     for="Purposes1">Business</label>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <label for="" class="col-sm-3 col-form-label">Extra
+                                                    <div class="form-group col-lg-6">
+                                                        <label for="" class="col-12 col-form-label p-0">Extra
                                                             service</label>
-                                                        <div class="col-sm-6">
-
-                                                            <div class="form-check form-check-inline">
-                                                                <input type="checkbox" value="1" name="cardService"
-                                                                    id="cardService1" onchange="changeCheckOutFee()">
-                                                                <label class="form-check-label" for="cardService1">
-                                                                    Car pick-up service
-                                                                </label>
+                                                        <div class="d-flex mt-16">
+                                                            <div class="col-sm-10 col-12 p-0">
+                                                                <div class="form-check form-check-inline mb-16">
+                                                                    <input type="radio" checked="checked" value="1"
+                                                                        name="cardService" id="cardService1">
+                                                                    <label class="form-check-label" for="cardService1">
+                                                                        Car pick-up service
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input type="radio" value="1" name="cardService"
+                                                                        id="airportService1">
+                                                                    <label class="form-check-label"
+                                                                        for="airportService1">
+                                                                        Airport Fast-track service
+                                                                    </label>
+                                                                </div>
                                                             </div>
-                                                            <div class="form-check form-check-inline">
-                                                                <input type="checkbox" value="1" name="airportService"
-                                                                    id="airportService1" onchange="changeCheckOutFee()">
-                                                                <label class="form-check-label" for="airportService1">
-                                                                    Airport Fast-track service
-                                                                </label>
+                                                            <div class="col-sm-2">
+                                                                <span class="text-red-fee1 mb-16"
+                                                                    id="cardServicePrice">0</span>
+                                                                <span class="text-red-fee1"
+                                                                    id="airportServicePrice">0</span>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <span class="text-red-fee1" id="cardServicePrice">0</span>
-                                                            <span class="text-red-fee1"
-                                                                id="airportServicePrice">0</span>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="footer-fee-search">
                                                     <div class="row">
-                                                        <div class="col-lg-9 order-lg-1 order-2">
-                                                            <div class="text-center">
-                                                                <button type="submit"
-                                                                    class="ht-btn ht-btn-md btn-maincolor">
-                                                                    Apply now!
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 order-lg-2 order-1">
+                                                        <div class="col-lg-3">
                                                             <div class="total-fee-footer">
                                                                 <span class="total-title-footer">Total:</span>
                                                                 <span class="total-money-footer"><span
                                                                         class="font-money">$</span> <span
                                                                         id="totalMoney">65</span></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-9">
+                                                            <div class="text-right">
+                                                                <button type="submit"
+                                                                    class=" btn-maincolor btn_submit-fees">
+                                                                    Apply now
+                                                                </button>
                                                             </div>
                                                         </div>
                                                         <input type="hidden" id="Fee" value="65">
@@ -1028,12 +756,7 @@
                                                             alt="Liberia">&nbsp;Liberia
                                                     </a>
                                                 </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(152)" title="Tokelau">
-                                                        <img src="../../images/Country/niqnrjmFlag_of_Tokelau.svg (1).png"
-                                                            alt="Tokelau">&nbsp;Tokelau
-                                                    </a>
-                                                </li>
+
                                                 <li>
                                                     <a href="javascript:ViewFeeCountry(146)" title="Swaziland">
                                                         <img src="../../images/Country/Flag_of_Eswatini.svg.png"
@@ -1071,12 +794,7 @@
                                                             alt="Nepal">&nbsp;Nepal
                                                     </a>
                                                 </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(241)" title="Guinea">
-                                                        <img src="../../images/Country/urdasgpFlag_of_Guinea.svg.png"
-                                                            alt="Guinea">&nbsp;Guinea
-                                                    </a>
-                                                </li>
+
                                                 <li>
                                                     <a href="javascript:ViewFeeCountry(149)" title="Taiwan">
                                                         <img src="../../images/Country/Flag_of_the_Republic_of_China.svg (1).png"
@@ -1113,12 +831,7 @@
                                                             alt="Rwanda">&nbsp;Rwanda
                                                     </a>
                                                 </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(64)" title="Guiana">
-                                                        <img src="../../images/Country/Flag_of_Guinea.svg.png"
-                                                            alt="Guiana">&nbsp;Guiana
-                                                    </a>
-                                                </li>
+
                                                 <li>
                                                     <a href="javascript:ViewFeeCountry(207)" title="Lesotho">
                                                         <img src="../../images/Country/etjcehlFlag_of_Lesotho.svg.png"
@@ -1167,270 +880,6 @@
                                                             alt="Botswana">&nbsp;Botswana
                                                     </a>
                                                 </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(187)" title="Zimbabwe">
-                                                        <img src="../../images/Country/lvqeqetFlag_of_Zimbabwe.svg.png"
-                                                            alt="Zimbabwe">&nbsp;Zimbabwe
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(210)" title="Iraq">
-                                                        <img src="../../images/Country/mnolvlkFlag_of_Iraq.svg.png"
-                                                            alt="Iraq">&nbsp;Iraq
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(176)"
-                                                        title="United Arab Emirates">
-                                                        <img src="../../images/Country/Flag_of_the_United_Arab_Emirates.svg (1).png"
-                                                            alt="United Arab Emirates">&nbsp;United Arab Emirates
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(170)" title="China">
-                                                        <img src="../../images/Country/Flag_of_the_People's_Republic_of_China.svg (1).png"
-                                                            alt="China">&nbsp;China
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(204)" title="Quata">
-                                                        <img src="../../images/Country/Flag_of_Qatar.svg.png"
-                                                            alt="Quata">&nbsp;Quata
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(196)" title="Palestine">
-                                                        <img src="../../images/Country/lbmrdbcFlag_of_Palestine.svg.png"
-                                                            alt="Palestine">&nbsp;Palestine
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(90)" title="Madagascar">
-                                                        <img src="../../images/Country/Flag_of_Madagascar.svg.png"
-                                                            alt="Madagascar">&nbsp;Madagascar
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(247)" title="Mali">
-                                                        <img src="../../images/Country/Flag_of_Mali.svg.png"
-                                                            alt="Mali">&nbsp;Mali
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(119)" title="Paraguay">
-                                                        <img src="../../images/Country/1200px-Flag_of_Paraguay_(1842-1954).svg (1).png"
-                                                            alt="Paraguay">&nbsp;Paraguay
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(211)" title="Guinea-Bissau">
-                                                        <img src="../../images/Country/23px-Flag_of_Guinea-Bissau.svg.png"
-                                                            alt="Guinea-Bissau">&nbsp;Guinea-Bissau
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(234)" title="Angola">
-                                                        <img src="../../images/Country/Flag_of_Angola.svg (1).png"
-                                                            alt="Angola">&nbsp;Angola
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(105)" title="Mozambique">
-                                                        <img src="../../images/Country/Flag_of_Mozambique.svg.png"
-                                                            alt="Mozambique">&nbsp;Mozambique
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(205)" title="Morocco">
-                                                        <img src="../../images/Country/eaiaimbFlag_of_Morocco_(large_stroke).svg.png"
-                                                            alt="Morocco">&nbsp;Morocco
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(42)" title="Djibouti">
-                                                        <img src="../../images/Country/Flag_of_Djibouti.svg.png"
-                                                            alt="Djibouti">&nbsp;Djibouti
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(5)" title="Turkey">
-                                                        <img src="../../images/Country/22px-Flag_of_Turkey.svg.png"
-                                                            alt="Turkey">&nbsp;Turkey
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(242)" title="Gabon">
-                                                        <img src="../../images/Country/Flag_of_Gabon.svg.png"
-                                                            alt="Gabon">&nbsp;Gabon
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(199)" title="Cameroon">
-                                                        <img src="../../images/Country/sbtstjlFlag_of_Cameroon.svg.png"
-                                                            alt="Cameroon">&nbsp;Cameroon
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(248)" title="Malpies">
-                                                        <img src="../../images/Country/" alt="Malpies">&nbsp;Malpies
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(191)" title="Pakistan">
-                                                        <img src="../../images/Country/amgmjufFlag_of_Pakistan.svg.png"
-                                                            alt="Pakistan">&nbsp;Pakistan
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(185)" title="Oman">
-                                                        <img src="../../images/Country/Flag_of_Oman.svg.png"
-                                                            alt="Oman">&nbsp;Oman
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(202)" title="Zambia">
-                                                        <img src="../../images/Country/Flag_of_Zambia.svg.png"
-                                                            alt="Zambia">&nbsp;Zambia
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(251)" title="Seychelles">
-                                                        <img src="../../images/Country/Flag_of_Seychelles.svg.png"
-                                                            alt="Seychelles">&nbsp;Seychelles
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(16)" title="Azerbaijan">
-                                                        <img src="../../images/Country/Flag_of_Azerbaijan.svg.png"
-                                                            alt="Azerbaijan">&nbsp;Azerbaijan
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(208)" title="Somalia">
-                                                        <img src="../../images/Country/tfstbqhFlag_of_Somalia.svg.png"
-                                                            alt="Somalia">&nbsp;Somalia
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(45)" title="Egypt">
-                                                        <img src="../../images/Country/laodsghFlag_of_Egypt.svg.png"
-                                                            alt="Egypt">&nbsp;Egypt
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(245)" title="Libya">
-                                                        <img src="../../images/Country/Flag_of_Libya.svg.png"
-                                                            alt="Libya">&nbsp;Libya
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(71)" title="India">
-                                                        <img src="../../images/Country/India.jpg"
-                                                            alt="India">&nbsp;India
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(117)" title="Palau">
-                                                        <img src="../../images/Country/Flag_of_Palau.svg.png"
-                                                            alt="Palau">&nbsp;Palau
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(240)" title="Burundi">
-                                                        <img src="../../images/Country/Flag_of_Burundi.svg.png"
-                                                            alt="Burundi">&nbsp;Burundi
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(186)" title="Saudi Arabia">
-                                                        <img src="../../images/Country/Flag_of_Saudi_Arabia.svg.png"
-                                                            alt="Saudi Arabia">&nbsp;Saudi Arabia
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(17)" title="Barbados">
-                                                        <img src="../../images/Country/dmrpercFlag_of_Barbados.svg.png"
-                                                            alt="Barbados">&nbsp;Barbados
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(217)" title="Congo">
-                                                        <img src="../../images/Country/Flag_of_the_Democratic_Republic_of_the_Congo.svg.png"
-                                                            alt="Congo">&nbsp;Congo
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(203)" title="Cote DIvoire">
-                                                        <img src="../../images/Country/Flag_of_Côte_d'Ivoire.svg.png"
-                                                            alt="Cote DIvoire">&nbsp;Cote DIvoire
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(183)" title="Sudan">
-                                                        <img src="../../images/Country/kljovgdFlag_of_Sudan.svg.png"
-                                                            alt="Sudan">&nbsp;Sudan
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(197)" title="Afghanistan">
-                                                        <img src="../../images/Country/ifbgomrFlag_of_Afghanistan_(2013–2021).svg.png"
-                                                            alt="Afghanistan">&nbsp;Afghanistan
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(246)" title="Malawi">
-                                                        <img src="../../images/Country/Flag_of_Malawi.svg.png"
-                                                            alt="Malawi">&nbsp;Malawi
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(214)" title="Lebanon">
-                                                        <img src="../../images/Country/Flag_of_Lebanon.svg.png"
-                                                            alt="Lebanon">&nbsp;Lebanon
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(174)" title="Nigeria">
-                                                        <img src="../../images/Country/rapbmbsFlag_of_Nigeria.svg.png"
-                                                            alt="Nigeria">&nbsp;Nigeria
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(249)" title="Niger">
-                                                        <img src="../../images/Country/Flag_of_Niger.svg.png"
-                                                            alt="Niger">&nbsp;Niger
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(180)" title="Bhutan">
-                                                        <img src="../../images/Country/Flag_of_Bhutan.svg.png"
-                                                            alt="Bhutan">&nbsp;Bhutan
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(206)" title="Togo">
-                                                        <img src="../../images/Country/Flag_of_Togo.svg.png"
-                                                            alt="Togo">&nbsp;Togo
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(243)" title="Gambia">
-                                                        <img src="../../images/Country/gm.gif" alt="Gambia">&nbsp;Gambia
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(194)" title="Ethiopia">
-                                                        <img src="../../images/Country/kfadvtnFlag_of_Ethiopia.svg.png"
-                                                            alt="Ethiopia">&nbsp;Ethiopia
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:ViewFeeCountry(200)" title="Syria">
-                                                        <img src="../../images/Country/Flag_of_Syria.svg.png"
-                                                            alt="Syria">&nbsp;Syria
-                                                    </a>
-                                                </li>
-
                                             </ul>
                                         </div>
 
@@ -1443,6 +892,7 @@
                                         </p>
 
                                         <div class="servicefees">
+                                          <div class="table-responsive">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -1507,12 +957,8 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                          </div>
                                         </div>
-
-
-
-
-
                                     </div>
 
                                     <p>
@@ -1528,525 +974,150 @@
                         </div>
                     </div>
                     <div class="col-lg-4 order-lg-2 order-2 bg-left-blogvisa">
-                        <div class="page-sidebar-content-wrapper page-sidebar-right small-mt__40 tablet-mt__40"
-                            id="accordion">
+                        <div class="page-sidebar-content-wrapper page-sidebar-right small-mt__40 tablet-mt__40">
                             <div class="sidebar-widget widget-blog-recent-post">
                                 <h4 class="sidebar-widget-title">
-                                    <button class="btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        Extra Services<span>
-                                            <i class="fas fa-chevron-down"></i>
-                                            <i class="fas fa-chevron-up"></i>
-                                        </span>
-                                    </button>
+                                    Extra Services
                                 </h4>
-
-                                <div id="collapseOne" class="show dont-collapse-sm" aria-labelledby="headingOne"
-                                    data-parent="#accordion">
-                                    <img class="img-fluid" src="../../images/Ads-Visa.png" alt="">
-
+                                <div id="collapseOne" class="show dont-collapse-sm">
                                     <ul>
                                         <li>
                                             <a href="#">
-                                                <i class="mdi mdi-airplane"></i> Airport Speed up Service
+                                                <img src="../../images/airport-sevices.png" alt="">
+                                                <p>Airport Speed up
+                                                    Service</p>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="mdi mdi-airplane"></i> VIP Airport Speedup Immigration Service
+                                                <img src="../../images/vip-air.png" alt="">
+                                                <p>VIP Airport Speedup
+                                                    Immigration Service</p>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="mdi mdi-taxi"></i> Car Pick up Service
+                                                <img src="../../images/Car-pick-up.png" alt="">
+                                                <p>Car Pick up Service</p>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="mdi mdi-passport"></i> Vietnam visa extension service
+                                                <img src="../../images/vietnam-visa.png" alt=""> Vietnam visa extension
+                                                service
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="mdi mdi-email-newsletter"></i> Private visa approval letter
+                                                <img src="../../images/private-visa.png" alt="">Private visa approval
+                                                letter
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="mdi mdi-ticket"></i> Vietnam flight tickets
+                                                <img src="../../images/vietnam-flight.png" alt="">
+                                                <p>Vietnam flight
+                                                    tickets</p>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="mdi mdi-briefcase"></i> Vietnam Tour Arrangement
+                                                <img src="../../images/vietnam-tour.png" alt="">
+                                                <p>Vietnam Tour
+                                                    Arrangement</p>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="mdi mdi-bed"></i> Vietnam Hotel Booking
+                                                <img src="../../images/vietnam-hotel.png" alt="">
+                                                <p>Vietnam Hotel Booking</p>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="mdi mdi-passport"></i> Gia han Vietnam visa
+                                                <img src="../../images/gia-han-vietnam-visa.png" alt="">
+                                                <p>Gia han Vietnam
+                                                    visa</p>
                                             </a>
                                         </li>
                                     </ul>
 
                                     <div class="bottom-btn">
                                         <a href="#" class="ht-btn ht-btn-md btn-maincolor">
-                                            Book now!
+                                            Apply Now
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <!-- === Sidebar Widget End === -->
-                            <!-- === Why us???? === -->
                             <div class="sidebar-widget widget-why">
                                 <h4 class="sidebar-widget-title">
-                                    <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                        aria-expanded="true" aria-controls="collapseTwo">
-                                        Why us ???<span>
-                                            <i class="fas fa-chevron-down"></i>
-                                            <i class="fas fa-chevron-up"></i>
-                                        </span>
-                                    </button>
+                                    Why us ?
                                 </h4>
                                 <div id="collapseTwo" class="show dont-collapse-sm" aria-labelledby="headingTwo"
                                     data-parent="#accordion">
-                                    <div class="content-why mt-30">
+                                    <div class="content-why">
                                         <ul class="check-list">
                                             <li class="list-item">
-                                                Fastest process in Vietnam, less 10 minutes
+                                                <i class="mdi mdi-check-circle"></i>Save
+                                                time - 100% online application
                                             </li>
                                             <li class="list-item">
-                                                Greatest number of successful applicants - more
-                                                500,000 from US, Australia, Canada,..
+                                                <i class="mdi mdi-check-circle"></i>Save
+                                                money - Cheap visa fee
                                             </li>
                                             <li class="list-item">
-                                                Long - time experience, close relationship with
-                                                Immigration Dept - more 10 years
+                                                <i class="mdi mdi-check-circle"></i>The desire to blur the global
+                                                boundaries fulfil
                                             </li>
                                             <li class="list-item">
-                                                24/7 Instant support via phone/chat and 2 - hour
-                                                quickly reply via mail
+                                                <i class="mdi mdi-check-circle"></i>Certified legal advisors to serve
+                                                you better way.
                                             </li>
                                             <li class="list-item">
-                                                Easy procedure - secure online payment gate
+                                                <i class="mdi mdi-check-circle"></i>Easy approval by choosing top visa
+                                                consultant
                                             </li>
                                         </ul>
-                                    </div>
-
-                                    <div class="bottom-btn">
-                                        <a href="/step_1" class="ht-btn ht-btn-md btn-maincolor">
-                                            Apply now!
-                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="sidebar-widget widget-contact">
                                 <h4 class="sidebar-widget-title">
-                                    <button class="btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                        Have any question?<span>
-                                            <i class="fas fa-chevron-down"></i>
-                                            <i class="fas fa-chevron-up"></i>
-                                        </span>
+                                    Have any question?
                                     </button>
                                 </h4>
 
-                                <div id="collapseThree" class="show dont-collapse-sm" aria-labelledby="headingThree"
-                                    data-parent="#accordion">
+                                <div id="collapseThree" class="show dont-collapse-sm">
                                     <div class="contact-inside">
-                                        <h6 class="footer-widget__title mb-20">Contact us</h6>
+                                        <h6 class="footer-widget__title mb-16">Contact us</h6>
                                         <ul class="footer-widget__list">
                                             <li>
-                                                <i class="mdi mdi-phone-settings"></i>Hotlines:
-                                                <a href="tel: +84903278853 " class="text-red font-weight--bold">
-                                                    +84.903.278.853 </a>
+                                                <img src="../../images/Phone-Call.png" alt="">
+                                                <p><strong>Tel:</strong>
+                                                    <a href="tel:+84 975 192 666 " class="">+84 975 192 666</a>
+                                                </p>
                                             </li>
                                             <li>
-                                                <i class="mdi mdi-email"></i>Email:
-                                                <a href="mailto:visa@govietnamvisa.com"
-                                                    class="">visa@govietnamvisa.com</a>
+                                                <img src="../../images/Mail-Email.png" alt=""></i>
+                                                <p><strong>Email:</strong>
+                                                    <a href="mailto:visa@govietnamvisa.com"
+                                                        class="">visa@govietnamvisa.com</a>
+                                                </p>
                                             </li>
                                             <li>
-                                                <i class="mdi mdi-clock-outline"></i>26 June 2023,
-                                                <span class="clock">15:38:30</span> (GMT+7)
+                                                <img src="../../images/address.png" alt=""></i>
+                                                <p><strong>Address:</strong>
+                                                    BT4 - A4 - No.8, Bui Xuan Phai Street, My Dinh 2 Ward, NamTu Liem
+                                                    District, Hanoi</p>
+                                            </li>
+                                            <li>
+                                                <img src="../../images/clock-time.png" alt=""></i>
+                                                <p><strong>26 June, 2023,</strong>
+                                                    15:10:35 (GMT +7) </p>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="sidebar-widget widget-contact">
-                                <h4 class="sidebar-widget-title">
-                                    <button class="collapsed" data-toggle="collapse" data-target="#collapseFour"
-                                        aria-expanded="true" aria-controls="collapseFour">
-                                        Testimonial<span>
-                                            <i class="fas fa-chevron-down"></i>
-                                            <i class="fas fa-chevron-up"></i>
-                                        </span>
-                                    </button>
-                                </h4>
-                                <div id="collapseFour" class="show dont-collapse-sm" aria-labelledby="headingFour"
-                                    data-parent="#accordion">
-                                    <div class="contact-inside">
-                                        <div class="testimonial-slider">
-                                            <div
-                                                class="swiper-container testimonial-slider__container swiper-container-initialized swiper-container-horizontal">
-                                                <div class="swiper-wrapper testimonial-slider__wrapper">
-                                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev"
-                                                        data-swiper-slide-index="6">
-                                                        <div class="testimonial-slider__one wow move-up animated"
-                                                            style="visibility: visible;">
-
-                                                            <div class="testimonial-slider__text">
-                                                                Truthfully, it’s hard to tell the difference between
-                                                                real companies and the fake ones. That’s why we created
-                                                                this post and want to share a real and reliable site we
-                                                                trust and recommend: govietnamvisa.com.
-                                                            </div>
-
-                                                            <div class="testimonial-slider--info">
-                                                                <div class="testimonial-slider__media">
-                                                                    <img src="../../images/no-avatar.png"
-                                                                        class="img-fluid" alt="">
-                                                                </div>
-
-                                                                <div class="testimonial-slider__author">
-                                                                    <div class="testimonial-rating">
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h6 class="name">Rev Emmanuel</h6>
-                                                                        <span class="designation">Canada</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide swiper-slide-active"
-                                                        data-swiper-slide-index="0">
-                                                        <div class="testimonial-slider__one wow move-up animated"
-                                                            style="visibility: visible;">
-
-                                                            <div class="testimonial-slider__text">
-                                                                Excellent service. Received my VOA within 2 day as
-                                                                promised.I would highly recommend using
-                                                                govietnamvisa.com.
-
-                                                                Thank you.
-                                                            </div>
-
-                                                            <div class="testimonial-slider--info">
-                                                                <div class="testimonial-slider__media">
-                                                                    <img src="../../images/no-avatar.png"
-                                                                        class="img-fluid" alt="">
-                                                                </div>
-
-                                                                <div class="testimonial-slider__author">
-                                                                    <div class="testimonial-rating">
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h6 class="name">William</h6>
-                                                                        <span class="designation">Canada</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide swiper-slide-next"
-                                                        data-swiper-slide-index="1">
-                                                        <div class="testimonial-slider__one wow move-up animated"
-                                                            style="visibility: visible;">
-
-                                                            <div class="testimonial-slider__text">
-                                                                Govietnamvisa.com helps me to get Visa Vietnam in Covid
-                                                                time, 2020 to see my husband. They do all things for me,
-                                                                from beginning to the end of quarantine. Now Iam going
-                                                                to ask for my visa extension. Keep going!!
-                                                            </div>
-
-                                                            <div class="testimonial-slider--info">
-                                                                <div class="testimonial-slider__media">
-                                                                    <img src="../../images/no-avatar.png"
-                                                                        class="img-fluid" alt="">
-                                                                </div>
-
-                                                                <div class="testimonial-slider__author">
-                                                                    <div class="testimonial-rating">
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h6 class="name">Katherine</h6>
-                                                                        <span class="designation">Australia</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide" data-swiper-slide-index="2">
-                                                        <div class="testimonial-slider__one wow move-up animated"
-                                                            style="visibility: visible;">
-
-                                                            <div class="testimonial-slider__text">
-                                                                Alternatively, and this is my preference, they can buy
-                                                                online an “approval letter” (from a private agency such
-                                                                as govietnamvisacom, which offers a very efficient
-                                                                service) that takes about 3 weeks to process for FUll
-                                                                Package visa in Covid. It's the easiest way to come back
-                                                                Vietnam in 2021
-                                                            </div>
-
-                                                            <div class="testimonial-slider--info">
-                                                                <div class="testimonial-slider__media">
-                                                                    <img src="../../images/no-avatar.png"
-                                                                        class="img-fluid" alt="">
-                                                                </div>
-
-                                                                <div class="testimonial-slider__author">
-                                                                    <div class="testimonial-rating">
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h6 class="name">John Henry</h6>
-                                                                        <span class="designation">United States</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide" data-swiper-slide-index="3">
-                                                        <div class="testimonial-slider__one wow move-up animated"
-                                                            style="visibility: visible;">
-
-                                                            <div class="testimonial-slider__text">
-                                                                Alternatively, and this is my preference, they can buy
-                                                                online an “approval letter” (from a private agency such
-                                                                as govietnamvisacom, which offers a very efficient
-                                                                service) that takes about 3 weeks to process for FUll
-                                                                Package visa in Covid. It's the easiest way to come back
-                                                                Vietnam in 2021
-                                                            </div>
-
-                                                            <div class="testimonial-slider--info">
-                                                                <div class="testimonial-slider__media">
-                                                                    <img src="../../images/no-avatar.png"
-                                                                        class="img-fluid" alt="">
-                                                                </div>
-
-                                                                <div class="testimonial-slider__author">
-                                                                    <div class="testimonial-rating">
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h6 class="name">John Henry</h6>
-                                                                        <span class="designation">United States</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide" data-swiper-slide-index="4">
-                                                        <div class="testimonial-slider__one wow move-up animated"
-                                                            style="visibility: visible;">
-
-                                                            <div class="testimonial-slider__text">
-                                                                Hi Team,
-
-                                                                Mrs Karen has landed safely in HCM and I sending this
-                                                                email as great
-                                                                appreciation for the effort your team has provided for
-                                                                pushing the visa
-                                                                approval letter through in such a short notice, making
-                                                                this trip possible.
-
-                                                                Thank you so much!
-                                                                Stephanie
-                                                            </div>
-
-                                                            <div class="testimonial-slider--info">
-                                                                <div class="testimonial-slider__media">
-                                                                    <img src="../../images/no-avatar.png"
-                                                                        class="img-fluid" alt="">
-                                                                </div>
-
-                                                                <div class="testimonial-slider__author">
-                                                                    <div class="testimonial-rating">
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h6 class="name">Stephanie </h6>
-                                                                        <span class="designation">Russia</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide" data-swiper-slide-index="5">
-                                                        <div class="testimonial-slider__one wow move-up animated"
-                                                            style="visibility: visible;">
-
-                                                            <div class="testimonial-slider__text">
-                                                                Visa: I arranged my letter through govietnamvisa.com
-                                                                which was very efficient, affordable and quick. For me
-                                                                the best way to get a Vietnam visa letter
-                                                            </div>
-
-                                                            <div class="testimonial-slider--info">
-                                                                <div class="testimonial-slider__media">
-                                                                    <img src="../../images/no-avatar.png"
-                                                                        class="img-fluid" alt="">
-                                                                </div>
-
-                                                                <div class="testimonial-slider__author">
-                                                                    <div class="testimonial-rating">
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h6 class="name">Celine</h6>
-                                                                        <span class="designation">Australia</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide swiper-slide-duplicate-prev"
-                                                        data-swiper-slide-index="6">
-                                                        <div class="testimonial-slider__one wow move-up animated"
-                                                            style="visibility: visible;">
-
-                                                            <div class="testimonial-slider__text">
-                                                                Truthfully, it’s hard to tell the difference between
-                                                                real companies and the fake ones. That’s why we created
-                                                                this post and want to share a real and reliable site we
-                                                                trust and recommend: govietnamvisa.com.
-                                                            </div>
-
-                                                            <div class="testimonial-slider--info">
-                                                                <div class="testimonial-slider__media">
-                                                                    <img src="../../images/no-avatar.png"
-                                                                        class="img-fluid" alt="">
-                                                                </div>
-
-                                                                <div class="testimonial-slider__author">
-                                                                    <div class="testimonial-rating">
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h6 class="name">Rev Emmanuel</h6>
-                                                                        <span class="designation">Canada</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                                                        data-swiper-slide-index="0">
-                                                        <div class="testimonial-slider__one wow move-up animated"
-                                                            style="visibility: visible;">
-
-                                                            <div class="testimonial-slider__text">
-                                                                Excellent service. Received my VOA within 2 day as
-                                                                promised.I would highly recommend using
-                                                                govietnamvisa.com.
-
-                                                                Thank you.
-                                                            </div>
-
-                                                            <div class="testimonial-slider--info">
-                                                                <div class="testimonial-slider__media">
-                                                                    <img src="../../images/no-avatar.png"
-                                                                        class="img-fluid" alt="">
-                                                                </div>
-
-                                                                <div class="testimonial-slider__author">
-                                                                    <div class="testimonial-rating">
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                        <span class="fa fa-star"></span>
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h6 class="name">William</h6>
-                                                                        <span class="designation">Canada</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="swiper-pagination swiper-pagination-t01 section-space--mt_30 swiper-pagination-clickable swiper-pagination-bullets">
-                                                    <span
-                                                        class="swiper-pagination-bullet swiper-pagination-bullet-active"
-                                                        tabindex="0" role="button"
-                                                        aria-label="Go to slide 1"></span><span
-                                                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                                                        aria-label="Go to slide 2"></span><span
-                                                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                                                        aria-label="Go to slide 3"></span><span
-                                                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                                                        aria-label="Go to slide 4"></span><span
-                                                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                                                        aria-label="Go to slide 5"></span><span
-                                                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                                                        aria-label="Go to slide 6"></span><span
-                                                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                                                        aria-label="Go to slide 7"></span>
-                                                </div>
-                                                <span class="swiper-notification" aria-live="assertive"
-                                                    aria-atomic="true"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sidebar-widget widget-contact">
-
                             </div>
 
                         </div>
@@ -2056,9 +1127,334 @@
             </div>
         </div>
     </div>
+    <div class="client-think bg-client-think">
+        <div class="__vnvisa-client-say ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="wrap-title-client-say text-center mb-32">
+                            <h2 class="hd-1 mb-2 client-say-title resp-title">What our clients think?</h2>
+                        </div>
+                        <div class="list-client-say">
+                            <div class="rplg" data-id="32784">
+                                <div class="rplg-grid">
+                                    <div class="rplg-grid-row rplg-reviews">
+                                        <div class="rplg-col rplg-col-12">
+                                            <div class="rplg-box">
+                                                <div class="rplg-box-content">
+                                                    <span class="rplg-review-text">Lorem ipsum
+                                                        dolor sit amet consectetur. Amet amet malesuada consequat tellus
+                                                        aliquam semper auctor. Bibendum sed faucibus ullamcorper mus et
+                                                        gravida. Imperdiet pellentesque odio commodo dui dictum et
+                                                        accumsan. Eu consectetur cras pellentesque rutrum
+                                                        mauris.
+                                                    </span>
+                                                    <span class="rplg-review-badge">
+                                                        <span class="rplg-social-logo rplg-google-logo">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 512 512" height="44" width="44">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                    <path
+                                                                        d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z"
+                                                                        fill="#4285f4"></path>
+                                                                    <path
+                                                                        d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z"
+                                                                        fill="#34a853"></path>
+                                                                    <path
+                                                                        d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z"
+                                                                        fill="#fbbc05"></path>
+                                                                    <path
+                                                                        d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z"
+                                                                        fill="#ea4335"></path>
+                                                                    <path d="M20 20h472v472H20V20z"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="rplg-row">
+                                                <div class="rplg-row-left"><img width="64" height="64"
+                                                        src="../../images/unnamed.png"
+                                                        class="rplg-review-avatar rplg-blazy b-loaded" alt="Matt Allan">
+                                                </div>
+                                                <div class="rplg-row-right"><a href="#"
+                                                        class="rplg-review-name rplg-trim" target="_blank"
+                                                        rel="noopener" title="Matt Allan">Matt Allan</a>
+                                                    <div class="rplg-review-time rplg-trim" data-time="1679127867">3
+                                                        months ago</div>
+                                                    <div class="rplg-stars"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            version="1.1" width="17" height="17"
+                                                            viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg></div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rplg-col rplg-col-12">
+                                            <div class="rplg-box">
+                                                <div class="rplg-box-content">
+                                                    <span class="rplg-review-text">Lorem ipsum
+                                                        dolor sit amet consectetur. Amet amet malesuada consequat tellus
+                                                        aliquam semper auctor. Bibendum sed faucibus ullamcorper mus et
+                                                        gravida. Imperdiet pellentesque odio commodo dui dictum et
+                                                        accumsan. Eu consectetur cras pellentesque rutrum
+                                                        mauris.
+                                                    </span>
+                                                    <span class="rplg-review-badge">
+                                                        <span class="rplg-social-logo rplg-google-logo">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 512 512" height="44" width="44">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                    <path
+                                                                        d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z"
+                                                                        fill="#4285f4"></path>
+                                                                    <path
+                                                                        d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z"
+                                                                        fill="#34a853"></path>
+                                                                    <path
+                                                                        d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z"
+                                                                        fill="#fbbc05"></path>
+                                                                    <path
+                                                                        d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z"
+                                                                        fill="#ea4335"></path>
+                                                                    <path d="M20 20h472v472H20V20z"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="rplg-row">
+                                                <div class="rplg-row-left"><img width="64" height="64"
+                                                        src="../../images/unnamed.png"
+                                                        class="rplg-review-avatar rplg-blazy b-loaded" alt="Matt Allan">
+                                                </div>
+                                                <div class="rplg-row-right"><a href="#"
+                                                        class="rplg-review-name rplg-trim" target="_blank"
+                                                        rel="noopener" title="Matt Allan">Matt Allan</a>
+                                                    <div class="rplg-review-time rplg-trim" data-time="1679127867">3
+                                                        months ago</div>
+                                                    <div class="rplg-stars"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            version="1.1" width="17" height="17"
+                                                            viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg></div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rplg-col rplg-col-12">
+                                            <div class="rplg-box">
+                                                <div class="rplg-box-content">
+                                                    <span class="rplg-review-text">Lorem ipsum
+                                                        dolor sit amet consectetur. Amet amet malesuada consequat tellus
+                                                        aliquam semper auctor. Bibendum sed faucibus ullamcorper mus et
+                                                        gravida. Imperdiet pellentesque odio commodo dui dictum et
+                                                        accumsan. Eu consectetur cras pellentesque rutrum
+                                                        mauris.
+                                                    </span>
+                                                    <span class="rplg-review-badge">
+                                                        <span class="rplg-social-logo rplg-google-logo">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 512 512" height="44" width="44">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                    <path
+                                                                        d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z"
+                                                                        fill="#4285f4"></path>
+                                                                    <path
+                                                                        d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z"
+                                                                        fill="#34a853"></path>
+                                                                    <path
+                                                                        d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z"
+                                                                        fill="#fbbc05"></path>
+                                                                    <path
+                                                                        d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z"
+                                                                        fill="#ea4335"></path>
+                                                                    <path d="M20 20h472v472H20V20z"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="rplg-row">
+                                                <div class="rplg-row-left"><img width="64" height="64"
+                                                        src="../../images/unnamed.png"
+                                                        class="rplg-review-avatar rplg-blazy b-loaded" alt="Matt Allan">
+                                                </div>
+                                                <div class="rplg-row-right"><a href="#"
+                                                        class="rplg-review-name rplg-trim" target="_blank"
+                                                        rel="noopener" title="Matt Allan">Matt Allan</a>
+                                                    <div class="rplg-review-time rplg-trim" data-time="1679127867">3
+                                                        months ago</div>
+                                                    <div class="rplg-stars"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            version="1.1" width="17" height="17"
+                                                            viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg></div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rplg-col rplg-col-12">
+                                            <div class="rplg-box">
+                                                <div class="rplg-box-content">
+                                                    <span class="rplg-review-text">Lorem ipsum
+                                                        dolor sit amet consectetur. Amet amet malesuada consequat tellus
+                                                        aliquam semper auctor. Bibendum sed faucibus ullamcorper mus et
+                                                        gravida. Imperdiet pellentesque odio commodo dui dictum et
+                                                        accumsan. Eu consectetur cras pellentesque rutrum
+                                                        mauris.
+                                                    </span>
+                                                    <span class="rplg-review-badge">
+                                                        <span class="rplg-social-logo rplg-google-logo">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 512 512" height="44" width="44">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                    <path
+                                                                        d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z"
+                                                                        fill="#4285f4"></path>
+                                                                    <path
+                                                                        d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z"
+                                                                        fill="#34a853"></path>
+                                                                    <path
+                                                                        d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z"
+                                                                        fill="#fbbc05"></path>
+                                                                    <path
+                                                                        d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z"
+                                                                        fill="#ea4335"></path>
+                                                                    <path d="M20 20h472v472H20V20z"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="rplg-row">
+                                                <div class="rplg-row-left"><img width="64" height="64"
+                                                        src="../../images/unnamed.png"
+                                                        class="rplg-review-avatar rplg-blazy b-loaded" alt="Matt Allan">
+                                                </div>
+                                                <div class="rplg-row-right"><a href="#"
+                                                        class="rplg-review-name rplg-trim" target="_blank"
+                                                        rel="noopener" title="Matt Allan">Matt Allan</a>
+                                                    <div class="rplg-review-time rplg-trim" data-time="1679127867">3
+                                                        months ago</div>
+                                                    <div class="rplg-stars"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            version="1.1" width="17" height="17"
+                                                            viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#e7711b"></path>
+                                                        </svg></div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <div class="footer-area-wrapper bg-footer">
         <div class="footer-copyright-area">
             <div class="container">
+                <div class="row logo-footer">
+                    <img src="../../images/logo/logo-footer.png" alt="">
+                </div>
                 <div class="row align-items-center">
                     <div class="col-md-12 text-center text-md-left">
                         <span class="copyright-text">Govietnamvisa.com is one of the website in Go Vietnam systems
@@ -2128,7 +1524,7 @@
                         <h6 class="footer-widget__title mb-10">CONTACT US</h6>
 
                         <ul class="footer-widget__list">
-                            <li>Tel: <a class="text-black font-weight--bold" href="tel:84903278853">+84
+                            <li>Tel: <a class="font-weight--bold" href="tel:84903278853">+84
                                     975 192 666</a></li>
                             <li>Email: <a href="mailto:contact@letravel.company">contact@letravel.company</a>
                             </li>
