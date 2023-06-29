@@ -855,7 +855,7 @@ blockquote cite:before {
 }
 @media (min-width: 768px) {
   .__header.is-dir-down {
-    transform: translateY(-43px);
+    transform: translateY(-51px);
   }
 }
 .__header .__english .wrap-english {

@@ -735,7 +735,7 @@ input[type="checkbox"] {
   border-bottom-width: 0px;
   background-size: cover;
   background-image: url(../images/bg-about-us.png);
-  padding: 75px 0;
+  padding: 144px 0 67px;
 }
 .breadcrumb-area-fees {
   background-repeat: no-repeat;
@@ -3409,7 +3409,7 @@ input[type="checkbox"] {
 
 @media only screen and (min-width: 1500px) and (max-width: 1599px) {
   .navigation-menu > ul > li {
-    margin: 0 22px;
+    margin: 0 15px;
   }
 }
 
@@ -3887,17 +3887,8 @@ input[type="checkbox"] {
 }
 
 .mobile-navigation-icon i {
-  color: #fff;
+  color: #d6001a;
   font-size: 28px;
-}
-
-.mobile-navigation-icon:hover i {
-  color: #fff;
-}
-
-.mobile-navigation-icon:hover i:before {
-  width: 80%;
-  color: #fff;
 }
 
 .mobile-navigation-icon:hover i:after {
@@ -18288,7 +18279,7 @@ select {
   display: block;
 }
 
-.hta-step-img img{
+.hta-step-img img {
   width: 100%;
 }
 .process-content .process-content-title {
@@ -18342,9 +18333,9 @@ select {
 .hta-step-1::before {
   width: 0;
   height: 0;
-  border-bottom: 18px solid #7A0600;
+  border-bottom: 18px solid #7a0600;
   border-left: 12px solid transparent;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -11px;
@@ -18352,14 +18343,36 @@ select {
 .hta-step-1::after {
   width: 0;
   height: 0;
-  border-bottom: 18px solid #7A0600;
+  border-bottom: 18px solid #7a0600;
   border-right: 12px solid transparent;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: -11px;
 }
-.items-step-hta{
+.items-step-hta {
   margin-bottom: 100px;
   position: relative;
+}
+.header-center-bar-info {
+  background: rgba(214, 0, 26, 0.2);
+  position: fixed;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .header-center-bar-info {
+    background: #ffffff;
+  }
+}
+.header_logo {
+  padding: 20px 32px;
+  background: #ffffff;
+}
+.navigation-menu > ul > li > a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.mobile-navigation-icon {
+  padding: 0 20px;
 }
