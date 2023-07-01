@@ -4106,11 +4106,20 @@ blockquote cite:before {
   padding: 0.75rem 1.5rem;
   border: 1px solid transparent;
 }
-.btn-blue-grad:hover {
-  color: #d6001a;
-  background-color: #ffffff;
-  border: 1px solid #d6001a;
+.btn-requirement {
+  font-size: 1rem;
+  color: #fff !important;
+  font-weight: 500;
+  background: #d6001a !important;
+  border-image-slice: 1;
+  border-width: 0px;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid transparent;
 }
+
 .btn-red-grad {
   color: #fff !important;
   font-weight: 500;

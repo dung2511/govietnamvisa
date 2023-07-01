@@ -18664,3 +18664,23 @@ label > em {
 .bg-header-scroll {
   background: #d6001a;
 }
+.introduce-home-content {
+  position: relative;
+}
+.cybersecurity-home-box-banner {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(100%);
+  animation: move-left-right 2s linear infinite;
+}
+@keyframes move-left-right {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 20px;
+  }
+  100% {
+    left: 0;
+  }
+}
